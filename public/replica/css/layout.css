@@ -3036,3 +3036,335 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.wd-thumbs button{flex:0 0 18.6%;}
 	.line.type150{display:none;}
 }
+
+/* ============================================================
+   手机端适配（视口宽度 ≤ 640px）
+   桌面排版按 1920 宽标定 vw，窄屏等比缩放会让正文掉到 3—6px。
+   这里按内容类型分别处理：
+   · 文字内容 → 放大到 11px 以上
+   · 示意图/装饰素材（手机样机、聊天卡片、二维码）→ 压缩或隐藏，
+     把空间让给文字
+   动画与交互选择器未做任何改动。
+   ============================================================ */
+@media all and (max-width: 640px){
+
+	/* ---------- 栏目 1：关于我 ---------- */
+	.flyq_area1{padding:6vw 6.25vw 0;}
+	.flyq_area1 .tit p{font-size:12.4vw;line-height:1.08;flex-wrap:wrap;}
+	.flyq_area1 .tit p ~ p{margin-top:2.6vw;}
+	.flyq_area1 .txt{margin-top:4.6vw;}
+	.flyq_area1 .txt p{font-size:3.7vw;line-height:1.5;}
+	.flyq_area1 .cha{width:50vw;right:6.25vw;bottom:1vw;}
+
+	.flyq_area2{display:block;}
+	.flyq_area2 .lef{width:100%;height:100%;align-items:center;}
+	.flyq_area2 .rig{display:none;}
+	.flyq_area2 .lef dl{width:100%;padding:0 6.25vw;margin:0;}
+	.flyq_area2 .profile_copy .profile_kicker{font-size:2.8vw;margin-bottom:2.6vw;}
+	.flyq_area2 .profile_copy h2{font-size:5.2vw;line-height:1.3;margin-bottom:4.4vw;}
+	.flyq_area2 .profile_list{display:block;border-top:1px solid #1d1d1b;}
+	.flyq_area2 .profile_list li{display:grid;grid-template-columns:7vw 1fr;gap:2.4vw;padding:2.6vw 0;
+		border-top:0;border-bottom:1px solid #d4d4d4;}
+	.flyq_area2 .profile_list li em{font-size:2.8vw;margin-bottom:0;padding:0.7vw 0 0;}
+	.flyq_area2 .profile_list li strong{font-size:3.5vw;margin-bottom:1vw;}
+	.flyq_area2 .profile_list li p{font-size:3vw;line-height:1.55;}
+
+	.flyq_area3{display:block;}
+	.flyq_area3 .top{height:auto;display:block;padding:6vw 6.25vw 0;}
+	.flyq_area3 .growth_head{margin-bottom:3.2vw;}
+	.flyq_area3 .growth_head p{font-size:2.6vw;}
+	.flyq_area3 .growth_head h2{font-size:7.4vw;}
+	.flyq_area3 .bot{width:100%;height:auto;display:block;padding:4.2vw 6.25vw 0;}
+	.flyq_area3 .growth_item,
+	.flyq_area3 .bot .growth_item{grid-template-columns:7.5vw 1px 1fr;gap:3vw;}
+	.flyq_area3 .growth_item i{height:12vw;}
+	.flyq_area3 .growth_num{font-size:3.4vw;}
+	.flyq_area3 .growth_item strong{font-size:3.5vw;margin-bottom:1.2vw;}
+	.flyq_area3 .growth_item p{max-width:none;font-size:3vw;line-height:1.6;}
+
+	/* ---------- 栏目 2：ProjectSync AI ---------- */
+	.ps-hero .lef{height:62%;}
+	.ps-hero .rig{height:38%;}
+	.ps-left{padding:4.2vw 5vw 3.6vw;}
+	.ps-tag{font-size:2.7vw;padding:1vw 2.2vw;border-radius:0.8vw;gap:1.2vw;}
+	.ps-tag::before{width:1.6vw;height:1.6vw;}
+	.ps-title{font-size:5.6vw;margin-top:2vw;line-height:1.26;}
+	.ps-chat{margin-top:2.4vw;border-radius:1.4vw;}
+	.ps-side{width:11vw;padding:1.6vw 0.8vw;gap:0.9vw;}
+	.ps-side-item{font-size:2.2vw;padding:1.2vw 0;border-radius:0.8vw;}
+	.ps-main{padding:2vw 2.4vw 2.2vw;}
+	.ps-head b{font-size:2.9vw;}
+	.ps-head span{font-size:2.2vw;}
+	.ps-head em{font-size:2.1vw;padding:0.5vw 1.1vw;}
+	.ps-bubble-kicker{font-size:2.1vw;}
+	.ps-bubble-title{font-size:3.4vw;}
+	.ps-card-top b{font-size:2.9vw;}
+	.ps-card-top i{font-size:2vw;}
+	.ps-card p{font-size:2.4vw;line-height:1.45;}
+	.ps-card span{font-size:2.2vw;}
+	.ps-card em{font-size:2.3vw;}
+	.ps-input span{font-size:2.3vw;}
+	.ps-list{padding:0 5vw 3.6vw;}
+	.ps-list li em{font-size:3.2vw;}
+	.ps-list li strong{font-size:3.2vw;}
+	.ps-list li p{font-size:2.8vw;line-height:1.45;}
+	.ps-arch .lef{height:56%;}
+	.ps-arch .rig{height:44%;}
+	.ps-sec{font-size:4.6vw;}
+	.ps-sec.sub{font-size:4vw;padding-left:2.4vw;}
+	.ps-node b{font-size:3vw;}
+	.ps-node span{font-size:2.6vw;}
+	.ps-safe li strong{font-size:3.2vw;}
+	.ps-safe li p{font-size:2.8vw;}
+
+	/* ---------- 栏目 3：食刻感知 ---------- */
+	.location.layout-v2{display:flex;flex-direction:column;}
+	.location.layout-v2 .lef{width:100%;height:auto;flex:0 0 auto;padding:5vw 6.25vw 0;}
+	.location.layout-v2 .shike-left{height:auto;}
+	.location.layout-v2 .shike-tag{font-size:2.7vw;padding:1.1vw 2.6vw;border-radius:0.9vw;}
+	.location.layout-v2 .shike-headline{font-size:6.4vw;margin-top:2.8vw;line-height:1.24;}
+	.location.layout-v2 .shike-desc{font-size:3.1vw;max-width:none;margin-top:2.4vw;line-height:1.5;}
+	.location.layout-v2 .shike-badges{gap:1.6vw;margin-top:2.6vw;}
+	.location.layout-v2 .shike-badges span{font-size:2.9vw;padding:1vw 2vw;border-radius:1vw;gap:1vw;}
+	.location.layout-v2 .shike-badges svg{width:3.4vw;height:3.4vw;}
+	.location.layout-v2 .phone-mockups{height:34vw;flex:none;margin:3.2vw 0 0;gap:2.6vw;}
+	.location.layout-v2 .phone{border-radius:1.8vw;padding:0.4vw;}
+	.location.layout-v2 .flow-bar{display:none;}
+	.location.layout-v2 .qr{display:none;}
+	.location.layout-v2 .rig{width:100%;height:auto;flex:1 1 auto;min-height:0;display:flex;padding:0;}
+	.location.layout-v2 .shike-right{height:100%;justify-content:center;}
+	.location.layout-v2 .f-row{height:auto;flex:1 1 0;min-height:0;padding:0 6.25vw;
+		grid-template-columns:8vw 6.5vw 1fr;column-gap:1.8vw;row-gap:0.8vw;align-content:center;}
+	.location.layout-v2 .f-row-qr{display:none;}
+	.location.layout-v2 .f-icon{width:7vw;height:7vw;border-radius:1.6vw;}
+	.location.layout-v2 .f-icon svg{width:4vw;height:4vw;}
+	.location.layout-v2 .f-num{font-size:3.4vw;}
+	.location.layout-v2 .f-title{font-size:3.4vw;}
+	.location.layout-v2 .f-desc{grid-column:1 / -1;font-size:3vw;line-height:1.45;}
+
+	/* ---------- 栏目 4：设计作品合集 ---------- */
+	.wi-num{font-size:3vw;}
+	.wi-name p{font-size:4.6vw;}
+	.wi-name span{font-size:2.9vw;margin-top:1.4vw;line-height:1.4;}
+	.wd-idx{font-size:2.8vw;}
+	.wd-en{font-size:6.4vw;}
+	.wd-cn{font-size:3.2vw;}
+	.wd-desc{font-size:2.9vw;line-height:1.6;-webkit-line-clamp:4;}
+	.wd-thumbs button{flex:0 0 31.4%;}
+
+	/* ---------- 栏目 5：学术成果 ---------- */
+	.box5 .community1 .lef .same-paper-title dt{font-size:4vw;}
+	.box5 .community1 .lef .same-paper-title dd{font-size:2.6vw;margin-bottom:1.4vw;}
+	.box5 .community1 .same-summary{font-size:2.9vw;line-height:1.5;}
+	.box5 .community1 .lef .same-paper-meta{font-size:2.5vw;gap:2vw;}
+	.box5 .community1 .same-paper-meta > p{max-width:none;}
+	.box5 .same-links{gap:1.2vw;}
+	.box5 .community2 .same-predictions .same-caption{font-size:2.4vw;padding:0.9vw 1.4vw;}
+}
+
+/* 手机端：局部修正（依赖 slide 标记类，避免影响其他栏目） */
+@media all and (max-width: 640px){
+	/* 栏目 1 第三屏：三段合并为一栏，去掉被 50% 分割线撑出的空框 */
+	.slide-growth .line.type19,
+	.slide-growth .line.type20,
+	.slide-growth .line.type21{display:none;}
+	.slide-growth .flyq_area3{display:flex;flex-direction:column;justify-content:center;height:100%;}
+	.slide-growth .flyq_area3 .top{height:auto;width:100%;display:block;padding:0 6.25vw;}
+	.slide-growth .flyq_area3 .bot{width:100%;height:auto;display:block;padding:4.6vw 6.25vw 0;}
+	.slide-growth .growth_head{display:flex;flex-direction:column;align-items:flex-start;gap:1.2vw;margin-bottom:4.2vw;}
+	.slide-growth .growth_head p{order:-1;}
+
+	/* 栏目 3：单栏布局下竖分隔线与右侧横线会压住内容，改用行边框 */
+	.slide-shike-hero .line.type26,
+	.slide-shike-hero .line.type63,
+	.slide-shike-hero .line.type64,
+	.slide-shike-hero .line.type65,
+	.slide-shike-hero .line.type66{display:none;}
+	.slide-shike-hero .location.layout-v2 .f-row{border-top:1px solid rgba(5,150,105,0.16);}
+	.slide-shike-hero .location.layout-v2 .rig{padding-bottom:3.4vw;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 3：原模板的 m8—m15 边缘刻度按 60/70/80/90% 定位，
+	   单栏布局下已不对应任何行，隐藏避免出现碎线 */
+	.slide-shike-hero .line.__m{display:none;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 2：两列网格允许收缩，避免标题把单元格撑出画框 */
+	.ps-list li{min-width:0;}
+	.ps-list li div{min-width:0;padding-left:1vw;}
+	.ps-list li strong{font-size:2.9vw;}
+	.ps-list li p{font-size:2.5vw;line-height:1.4;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 2 架构页：四张安全卡片同样需要可收缩 */
+	.ps-safe li{min-width:0;}
+	.ps-safe li strong{font-size:2.9vw;}
+	.ps-safe li p{font-size:2.5vw;line-height:1.4;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 4：索引行的字号需用完整选择器覆盖桌面规则 */
+	.unit_plan.work-index ul li button .wi-num{font-size:3vw;}
+	.unit_plan.work-index ul li button .wi-name p{font-size:4.6vw;}
+	.unit_plan.work-index ul li button .wi-name span{font-size:2.9vw;margin-top:1.4vw;line-height:1.4;}
+	.unit_plan.work-index ul li button .wi-arrow{width:4.6vw;height:4.6vw;}
+	.unit_plan.work-index ul li button{grid-template-columns:6vw minmax(0,1fr) 4.6vw;column-gap:2.6vw;padding:0 5vw;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 4：手机上恢复封面缩略图，让索引更直观 */
+	.unit_plan.work-index ul li button{grid-template-columns:6vw minmax(0,1fr) 18vw 4.6vw;}
+	.unit_plan.work-index ul li button .wi-thumb{display:block;width:18vw;border-radius:0.6vw;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 4：标题与缩略图并存时收紧字号，并隐藏行尾箭头（整行可点） */
+	.unit_plan.work-index ul li button{grid-template-columns:6vw minmax(0,1fr) 17vw;}
+	.unit_plan.work-index ul li button .wi-name{overflow:hidden;}
+	.unit_plan.work-index ul li button .wi-name p{font-size:3.9vw;overflow:hidden;text-overflow:ellipsis;}
+	.unit_plan.work-index ul li button .wi-name span{font-size:2.7vw;}
+	.unit_plan.work-index ul li button .wi-thumb{display:block;width:17vw;border-radius:0.6vw;}
+	.unit_plan.work-index ul li button .wi-arrow{display:none;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 4 详情页：主图按原比例显示，避免上下出现大片灰边 */
+	.work-detail .lef{padding:3.4vw 6vw 2.4vw;}
+	.work-detail .rig{padding:0 6vw 3.4vw;}
+	.wd-stage{flex:none;aspect-ratio:1723/635;}
+	.wd-main{object-fit:cover;}
+	.wd-thumbs{margin-top:2.6vw;}
+	.wd-desc{font-size:2.9vw;line-height:1.62;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 4：描述段落恢复常规换行（原竖屏规则的行内截断在窄屏会切字） */
+	.work-detail .wd-desc{display:block;overflow:visible;white-space:normal;
+		word-break:normal;overflow-wrap:break-word;line-height:1.62;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 4 详情页：改为自然流式排布，避免文字与图片之间出现大片空白 */
+	.work-detail{display:block;}
+	.work-detail .lef{width:100%;height:auto;justify-content:flex-start;padding:4vw 6vw 0;overflow:visible;}
+	.work-detail .rig{width:100%;height:auto;justify-content:flex-start;padding:4.4vw 6vw 3.4vw;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 4 详情页：恢复项目信息（类型/关键词/年份），填充下半屏 */
+	.work-detail .wd-meta{display:block;margin-top:5vw;padding-top:3.4vw;border-top:1px solid rgba(0,0,0,0.14);}
+	.work-detail .wd-meta li{display:flex;gap:2.4vw;font-size:2.7vw;line-height:1.6;padding:0.8vw 0;}
+	.work-detail .wd-meta em{width:15vw;font-size:2.7vw;}
+	.work-detail .wd-meta span{font-size:2.7vw;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 4 详情页：整体垂直居中，上下留白更均匀 */
+	.work-detail{display:flex;flex-direction:column;justify-content:center;}
+}
+
+/* ============================================================
+   平板竖屏（641—1100px，纵向比例）
+   字号沿用原竖屏规则的 vw 值，仅修正会撑破画框的结构
+   ============================================================ */
+@media all and (min-width: 641px) and (max-aspect-ratio: 12/10){
+
+	/* 栏目 1：姓名行允许换行并适当收小，避免超出画框 */
+	.flyq_area1 .tit p{flex-wrap:wrap;font-size:9.6vw;}
+
+	/* 栏目 3：上下各半，手机样机作为弹性区吸收剩余高度 */
+	.location.layout-v2{display:flex;flex-direction:column;height:100%;}
+	.location.layout-v2 .lef{width:100%;height:auto;flex:0 0 auto;}
+	.location.layout-v2 .shike-left{height:auto;}
+	.location.layout-v2 .phone-mockups{height:13vw;flex:none;}
+	.location.layout-v2 .shike-tag{font-size:1.7vw;padding:0.8vw 2vw;}
+	.location.layout-v2 .shike-headline{font-size:4.8vw;margin-top:2vw;}
+	.location.layout-v2 .shike-desc{font-size:1.9vw;margin-top:1.8vw;}
+	.location.layout-v2 .shike-badges{gap:1.4vw;margin-top:2vw;}
+	.location.layout-v2 .shike-badges span{font-size:1.7vw;padding:0.8vw 1.5vw;}
+	.location.layout-v2 .qr-card{padding:1vw 1.6vw 1vw 1vw;gap:1.4vw;}
+	.location.layout-v2 .qr-thumb{width:6.4vw;height:6.4vw;}
+	.location.layout-v2 .qr-txt b{font-size:2.4vw;}
+	.location.layout-v2 .qr-txt span{font-size:1.6vw;}
+	.location.layout-v2 .f-row{padding:1.4vw 4.2vw;grid-template-columns:5.6vw 4.4vw 12vw 1fr;column-gap:1.6vw;}
+	.location.layout-v2 .f-icon{width:4.6vw;height:4.6vw;border-radius:1vw;}
+	.location.layout-v2 .f-icon svg{width:2.6vw;height:2.6vw;}
+	.location.layout-v2 .f-num{font-size:2.4vw;}
+	.location.layout-v2 .f-title{font-size:2vw;}
+	.location.layout-v2 .f-desc{font-size:1.75vw;line-height:1.45;}
+	.location.layout-v2 .f-row:last-child{padding-right:11vw;}
+	.location.layout-v2 .flow-bar{display:none;}
+	.location.layout-v2 .rig{width:100%;height:auto;flex:1 1 auto;min-height:0;display:flex;}
+	.location.layout-v2 .shike-right{height:100%;justify-content:center;}
+	.location.layout-v2 .f-row{height:auto;flex:1 1 0;min-height:0;align-content:center;}
+	.slide-shike-hero .line.type26,
+	.slide-shike-hero .line.type63,
+	.slide-shike-hero .line.type64,
+	.slide-shike-hero .line.type65,
+	.slide-shike-hero .line.type66{display:none;}
+	.slide-shike-hero .line.__m{display:none;}
+
+	/* 栏目 1 第三屏：50% 分割线在堆叠后失去意义 */
+	.slide-growth .line.type19,
+	.slide-growth .line.type20,
+	.slide-growth .line.type21{display:none;}
+	.slide-growth .flyq_area3{display:flex;flex-direction:column;justify-content:center;height:100%;}
+	.slide-growth .flyq_area3 .top,
+	.slide-growth .flyq_area3 .bot{height:auto;width:100%;}
+	.slide-growth .growth_head{flex-direction:column;align-items:flex-start;gap:0.8vw;}
+	.slide-growth .growth_head p{order:-1;}
+}
+
+/* ============================================================
+   窄屏换行修正
+   站点默认 word-break:keep-all（中文只在标点处换行），
+   单栏/窄列布局下长句会顶出画框，这里对正文类元素放开断行。
+   ============================================================ */
+@media all and (max-width: 640px){
+	.ps-desc,.ps-list li p,.ps-card p,.ps-safe li p,.ps-node span,.ps-node b,.ps-bubble-sub,.ps-card em,.ps-bubble-title,
+	.shike-desc,.f-desc,.qr-txt span,
+	.flyq_area2 .profile_list li p,.flyq_area2 .profile_copy h2,
+	.flyq_area3 .growth_item p,.flyq_area3 .growth_item strong,
+	.wd-desc,.wd-cn,.wd-meta span,
+	.same-summary,.same-paper-meta,.same-paper-title dt{word-break:normal;overflow-wrap:break-word;}
+}
+@media all and (min-width: 641px) and (max-aspect-ratio: 12/10){
+	.ps-desc,.ps-list li p,.ps-card p,.ps-safe li p,.ps-node span,.ps-node b,.ps-bubble-sub,.ps-card em,.ps-bubble-title,
+	.shike-desc,.f-desc,.qr-txt span,
+	.flyq_area2 .profile_list li p,.flyq_area2 .profile_copy h2,
+	.flyq_area3 .growth_item p,.flyq_area3 .growth_item strong,
+	.wd-desc,.wd-cn,.wd-meta span,
+	.same-summary,.same-paper-meta,.same-paper-title dt{word-break:normal;overflow-wrap:break-word;}
+}
+
+@media all and (max-width: 640px){
+	/* 栏目 2：末项右侧留出翻页按钮的位置 */
+	.ps-list li:last-child{padding-right:14vw;}
+}
+
+@media all and (min-width: 641px) and (max-aspect-ratio: 12/10){
+	/* 栏目 5：论文页改为纵向弹性排布，图片占剩余空间，避免压住标题 */
+	.box5 .community1 .lef{display:flex;flex-direction:column;gap:1.4vw;}
+	.box5 .community1 .same-paper-title,
+	.box5 .community1 .same-summary,
+	.box5 .community1 .lef .same-paper-meta{flex:none;}
+	.box5 .community1 .same-protocol{flex:1 1 auto;min-height:0;overflow:hidden;}
+	.box5 .community1 .same-protocol img{width:100%;height:100%;object-fit:cover;aspect-ratio:auto;}
+}
+
+/* 栏目 5：论文摘要的入场选择器多了一层 .box5（它在 slide 之外），
+   永远无法匹配，导致摘要在所有尺寸下都不显示。这里按正确的层级补回。 */
+.sd_start .ani .swiper-slide-active .community1 .same-summary{opacity:1;transform:none;transition-delay:1.15s;}
+
+@media all and (max-width: 640px){
+	/* 栏目 5：与平板一致，改为纵向弹性排布，摘要不再被压成 3 行截断 */
+	.box5 .community1 .lef{display:flex;flex-direction:column;gap:2vw;}
+	.box5 .community1 .same-paper-title,
+	.box5 .community1 .same-summary,
+	.box5 .community1 .lef .same-paper-meta{flex:none;}
+	.box5 .community1 .same-protocol{flex:1 1 auto;min-height:0;overflow:hidden;}
+	.box5 .community1 .same-protocol img{width:100%;height:100%;object-fit:cover;aspect-ratio:auto;}
+}
