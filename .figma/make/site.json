@@ -1,0 +1,11 @@
+{
+  "title": "Ren Zhuoyi'Portfolio",
+  "description": "A Korean aviation website that helps travelers explore flight options, compare routes, and find convenient travel information.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

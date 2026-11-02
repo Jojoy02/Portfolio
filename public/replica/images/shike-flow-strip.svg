@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1372 75">
+  <rect x="0" y="0" width="1372" height="75" rx="14" fill="#ffffff" stroke="#E5E7EB" stroke-width="2"/>
+  <line x1="120" y1="38" x2="1252" y2="38" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+    <circle cx="170" cy="38" r="10" fill="#059669" stroke="#ffffff" stroke-width="3"/>
+    <text x="170" y="26" text-anchor="middle" font-size="24" font-weight="600" fill="#1F2937">拍照</text>
+    <text x="170" y="66" text-anchor="middle" font-size="16" fill="#9CA3AF">01</text>
+    <circle cx="440" cy="38" r="10" fill="#059669" stroke="#ffffff" stroke-width="3"/>
+    <text x="440" y="26" text-anchor="middle" font-size="24" font-weight="600" fill="#1F2937">AI 识别</text>
+    <text x="440" y="66" text-anchor="middle" font-size="16" fill="#9CA3AF">02</text>
+    <circle cx="710" cy="38" r="10" fill="#059669" stroke="#ffffff" stroke-width="3"/>
+    <text x="710" y="26" text-anchor="middle" font-size="24" font-weight="600" fill="#1F2937">营养分析</text>
+    <text x="710" y="66" text-anchor="middle" font-size="16" fill="#9CA3AF">03</text>
+    <circle cx="980" cy="38" r="10" fill="#059669" stroke="#ffffff" stroke-width="3"/>
+    <text x="980" y="26" text-anchor="middle" font-size="24" font-weight="600" fill="#1F2937">生成记录</text>
+    <text x="980" y="66" text-anchor="middle" font-size="16" fill="#9CA3AF">04</text>
+    <circle cx="1250" cy="38" r="10" fill="#047857" stroke="#ffffff" stroke-width="3"/>
+    <text x="1250" y="26" text-anchor="middle" font-size="24" font-weight="600" fill="#1F2937">订阅提醒</text>
+    <text x="1250" y="66" text-anchor="middle" font-size="16" fill="#9CA3AF">05</text>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1630 1000" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="1630" height="1000" fill="#ffffff"/>
+  <!-- 根节点 -->
+  <rect x="685" y="50" width="260" height="72" rx="16" fill="#059669"/>
+  <text x="815" y="96" text-anchor="middle" font-size="30" font-weight="700" fill="#ffffff">食刻 Sense</text>
+  <!-- 连接线 -->
+  <g stroke="#D1FAE5" stroke-width="4" fill="none">
+    <path d="M 815 122 L 815 150 L 265 150 L 265 200"/>
+    <path d="M 815 150 L 655 200"/>
+    <path d="M 815 150 L 1045 200"/>
+    <path d="M 815 150 L 815 150 L 1365 150 L 1365 200"/>
+  </g>
+  <!-- 四大 Tab -->
+  <g font-size="26" font-weight="700">
+    <rect x="125" y="200" width="280" height="60" rx="12" fill="#047857"/>
+    <text x="265" y="239" text-anchor="middle" fill="#ffffff">首页</text>
+    <rect x="515" y="200" width="280" height="60" rx="12" fill="#047857"/>
+    <text x="655" y="239" text-anchor="middle" fill="#ffffff">收集册</text>
+    <rect x="905" y="200" width="280" height="60" rx="12" fill="#047857"/>
+    <text x="1045" y="239" text-anchor="middle" fill="#ffffff">回顾</text>
+    <rect x="1295" y="200" width="280" height="60" rx="12" fill="#047857"/>
+    <text x="1435" y="239" text-anchor="middle" fill="#ffffff">我的</text>
+  </g>
+  <!-- 页面卡片 -->
+  <g font-size="23" fill="#1F2937">
+    <g fill="#ffffff" stroke="#D1FAE5" stroke-width="3">
+      <rect x="125" y="290" width="280" height="54" rx="10"/><rect x="125" y="360" width="280" height="54" rx="10"/>
+      <rect x="125" y="430" width="280" height="54" rx="10"/><rect x="125" y="500" width="280" height="54" rx="10"/>
+      <rect x="515" y="290" width="280" height="54" rx="10"/><rect x="515" y="360" width="280" height="54" rx="10"/>
+      <rect x="515" y="430" width="280" height="54" rx="10"/>
+      <rect x="905" y="290" width="280" height="54" rx="10"/><rect x="905" y="360" width="280" height="54" rx="10"/>
+      <rect x="905" y="430" width="280" height="54" rx="10"/><rect x="905" y="500" width="280" height="54" rx="10"/>
+      <rect x="1295" y="290" width="280" height="54" rx="10"/><rect x="1295" y="360" width="280" height="54" rx="10"/>
+      <rect x="1295" y="430" width="280" height="54" rx="10"/><rect x="1295" y="500" width="280" height="54" rx="10"/>
+    </g>
+    <text x="265" y="326" text-anchor="middle">今日概览</text>
+    <text x="265" y="396" text-anchor="middle">拍照识别</text>
+    <text x="265" y="466" text-anchor="middle">语音描述</text>
+    <text x="265" y="536" text-anchor="middle">下一餐建议</text>
+    <text x="655" y="326" text-anchor="middle">餐食卡片</text>
+    <text x="655" y="396" text-anchor="middle">记录修改</text>
+    <text x="655" y="466" text-anchor="middle">撤销恢复</text>
+    <text x="1045" y="326" text-anchor="middle">数据统计</text>
+    <text x="1045" y="396" text-anchor="middle">日历视图</text>
+    <text x="1045" y="466" text-anchor="middle">单日详情</text>
+    <text x="1045" y="536" text-anchor="middle">周期分析</text>
+    <text x="1435" y="326" text-anchor="middle">个人资料</text>
+    <text x="1435" y="396" text-anchor="middle">身体数据</text>
+    <text x="1435" y="466" text-anchor="middle">设备连接</text>
+    <text x="1435" y="536" text-anchor="middle">通知设置</text>
+  </g>
+  <!-- 底部说明 -->
+  <rect x="415" y="680" width="800" height="64" rx="32" fill="#ECFDF5"/>
+  <text x="815" y="722" text-anchor="middle" font-size="26" fill="#047857">共 19 个页面 · 4 个自定义 Tab · 本地缓存优先 + 云端同步</text>
+  <g fill="#A7F3D0">
+    <circle cx="240" cy="712" r="8"/><circle cx="1390" cy="712" r="8"/>
+  </g>
+</svg>

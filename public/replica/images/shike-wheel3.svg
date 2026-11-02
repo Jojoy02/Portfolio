@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 466" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <g stroke="#A7F3D0" stroke-width="3">
+    <line x1="285" y1="233" x2="285" y2="63"/>
+    <line x1="285" y1="233" x2="432" y2="148"/>
+    <line x1="285" y1="233" x2="432" y2="318"/>
+    <line x1="285" y1="233" x2="285" y2="403"/>
+    <line x1="285" y1="233" x2="138" y2="318"/>
+    <line x1="285" y1="233" x2="138" y2="148"/>
+  </g>
+  <g>
+    <circle cx="285" cy="63" r="40" fill="#ffffff" stroke="#059669" stroke-width="3"/>
+    <circle cx="432" cy="148" r="40" fill="#ffffff" stroke="#059669" stroke-width="3"/>
+    <circle cx="432" cy="318" r="40" fill="#ffffff" stroke="#059669" stroke-width="3"/>
+    <circle cx="285" cy="403" r="40" fill="#ffffff" stroke="#059669" stroke-width="3"/>
+    <circle cx="138" cy="318" r="40" fill="#ffffff" stroke="#059669" stroke-width="3"/>
+    <circle cx="138" cy="148" r="40" fill="#ffffff" stroke="#059669" stroke-width="3"/>
+  </g>
+  <g font-size="23" font-weight="600" fill="#047857" text-anchor="middle">
+    <text x="285" y="70">正餐</text>
+    <text x="432" y="155">加餐</text>
+    <text x="432" y="326">下午茶</text>
+    <text x="285" y="410">夜宵</text>
+    <text x="138" y="326">饮品</text>
+    <text x="138" y="155">补剂</text>
+  </g>
+</svg>

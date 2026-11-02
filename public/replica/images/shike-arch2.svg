@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1630 1000" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="1630" height="1000" fill="#ffffff"/>
+  <!-- 输入层 -->
+  <g font-size="26" font-weight="600" fill="#1F2937">
+    <rect x="90" y="220" width="280" height="90" rx="14" fill="#ffffff" stroke="#059669" stroke-width="4"/>
+    <text x="230" y="275" text-anchor="middle">拍照上传</text>
+    <rect x="90" y="450" width="280" height="90" rx="14" fill="#ffffff" stroke="#059669" stroke-width="4"/>
+    <text x="230" y="505" text-anchor="middle">语音描述</text>
+    <rect x="90" y="680" width="280" height="90" rx="14" fill="#ffffff" stroke="#059669" stroke-width="4"/>
+    <text x="230" y="735" text-anchor="middle">条码扫描</text>
+  </g>
+  <!-- AI 服务代理 -->
+  <rect x="620" y="380" width="380" height="240" rx="20" fill="#059669"/>
+  <text x="810" y="470" text-anchor="middle" font-size="32" font-weight="700" fill="#ffffff">AI 服务代理</text>
+  <text x="810" y="520" text-anchor="middle" font-size="22" fill="#A7F3D0">hunyuanProxy · 视觉识别</text>
+  <!-- 营养分析 -->
+  <rect x="1090" y="425" width="240" height="150" rx="16" fill="#047857"/>
+  <text x="1210" y="488" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff">营养分析</text>
+  <text x="1210" y="528" text-anchor="middle" font-size="20" fill="#A7F3D0">食材库 · 标准菜配方</text>
+  <!-- 连接箭头 -->
+  <g stroke="#9CA3AF" stroke-width="4" fill="#9CA3AF">
+    <line x1="370" y1="265" x2="600" y2="430"/>
+    <line x1="370" y1="495" x2="600" y2="495"/>
+    <line x1="370" y1="725" x2="600" y2="560"/>
+    <line x1="1000" y1="500" x2="1074" y2="500"/>
+    <polygon points="1074,500 1054,490 1054,510"/>
+  </g>
+  <polygon points="614,436 596,426 590,444" fill="#9CA3AF"/>
+  <polygon points="614,556 590,548 602,568" fill="#9CA3AF"/>
+  <!-- 输出与云函数 -->
+  <g font-size="22" fill="#1F2937">
+    <rect x="560" y="830" width="320" height="84" rx="14" fill="#ECFDF5"/>
+    <text x="720" y="866" text-anchor="middle" font-weight="700">本地缓存 → 云数据库</text>
+    <text x="720" y="896" text-anchor="middle" fill="#9CA3AF">syncData · 离线重试</text>
+    <rect x="960" y="830" width="320" height="84" rx="14" fill="#ECFDF5"/>
+    <text x="1120" y="866" text-anchor="middle" font-weight="700">定时订阅提醒</text>
+    <text x="1120" y="896" text-anchor="middle" fill="#9CA3AF">sendNotify · 记录不遗漏</text>
+    <rect x="1360" y="830" width="270" height="84" rx="14" fill="#ECFDF5"/>
+    <text x="1495" y="866" text-anchor="middle" font-weight="700">商品条码查询</text>
+    <text x="1495" y="896" text-anchor="middle" fill="#9CA3AF">productLookup · OFF</text>
+  </g>
+  <!-- 记录结果 -->
+  <rect x="1390" y="440" width="220" height="120" rx="16" fill="#ffffff" stroke="#D1FAE5" stroke-width="4"/>
+  <text x="1500" y="492" text-anchor="middle" font-size="26" font-weight="700" fill="#047857">记录卡片</text>
+  <text x="1500" y="530" text-anchor="middle" font-size="20" fill="#9CA3AF">六类自动归档</text>
+  <line x1="1330" y1="500" x2="1374" y2="500" stroke="#9CA3AF" stroke-width="4"/>
+  <polygon points="1386,500 1366,490 1366,510" fill="#9CA3AF"/>
+</svg>

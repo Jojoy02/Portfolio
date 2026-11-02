@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 466" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <circle cx="285" cy="233" r="92" fill="#059669"/>
+  <circle cx="285" cy="233" r="92" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.4"/>
+  <!-- 相机图形 -->
+  <rect x="262" y="172" width="46" height="32" rx="8" fill="#ffffff"/>
+  <circle cx="285" cy="188" r="9" fill="#059669"/>
+  <rect x="270" y="166" width="14" height="8" rx="3" fill="#ffffff"/>
+  <text x="285" y="242" text-anchor="middle" font-size="40" font-weight="700" fill="#ffffff">食刻</text>
+  <text x="285" y="278" text-anchor="middle" font-size="26" fill="#A7F3D0">Sense</text>
+</svg>
