@@ -16,6 +16,8 @@ function currentHash() {
 export default function App() {
   const frameRef = useRef<HTMLIFrameElement>(null)
   const [loaded, setLoaded] = useState(false)
+  // 部署到子路径（如 GitHub Pages 的 /Portfolio/）时，静态资源需带上 base 前缀
+  const base = import.meta.env.BASE_URL
 
   useEffect(() => {
     const syncIntoFrame = () => {
@@ -45,13 +47,13 @@ export default function App() {
   return (
     <main className={`replica-shell ${loaded ? "is-loaded" : ""}`}>
       <div className="replica-loader" aria-hidden={loaded}>
-        <img src="/replica/images/logo.svg" alt="Ren Zhuoyi'Portfolio" />
+        <img src={`${base}replica/images/logo.svg`} alt="Ren Zhuoyi'Portfolio" />
         <i />
       </div>
       <iframe
         ref={frameRef}
         title="Ren Zhuoyi'Portfolio"
-        src={`/replica/index.html${currentHash()}`}
+        src={`${base}replica/index.html${currentHash()}`}
         onLoad={() => setLoaded(true)}
         allow="autoplay; fullscreen; picture-in-picture"
       />

@@ -24,3 +24,6 @@ logs/
 .playwright-cli/
 .workbuddy-ai/
 .tmp/
+
+# 本地 Pages 构建验证输出
+.pages-build/
