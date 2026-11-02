@@ -2556,3 +2556,350 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 .invitation .sd4.swiper-slide-active .con_area .map{opacity:1;transform:none;transition-delay:1.6s;}
 .invitation .sd4.swiper-slide-active .con_area dl dt{opacity:1;transform:none;transition-delay:2s;}
 .invitation .sd4.swiper-slide-active .con_area dl dd{opacity:1;transform:none;transition-delay:2.2s;}
+
+/* ============================================================
+   box2：ProjectSync AI（AI 项目管理助手）
+   画面 1：ps-hero  62.5 / 37.5，右侧 4×25% 行
+   画面 2：ps-arch  50 / 50，上下 28% / 72%
+   主色：ink #0F2740 / 蓝 #2E6BE6 / 底色沿用 #d6e7f7
+   ============================================================ */
+.ps-hero,
+.ps-arch{background-color: #d6e7f7;}
+.ps-hero{position: relative; display: flex; height: 100%;}
+.ps-arch{display: flex; height: 100%;}
+
+/* ---------- 画面 1 左区 ---------- */
+.ps-hero .lef{position: relative; width: 62.5%; flex: none; overflow: hidden; z-index: 1;}
+.ps-hero .lef .bg{position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0;
+	background: linear-gradient(150deg,#FBFDFF 0%,#E9F2FD 56%,#F6FAFF 100%);
+	opacity: 0; transform: scale(1.06); transition: 0.9s;}
+.ps-left{position: relative; z-index: 3; height: 100%; min-height: 0;
+	display: flex; flex-direction: column;
+	padding: 1.75vw 2.2vw 1.7vw 1.95vw;}
+
+.ps-tag{align-self: flex-start; display: inline-flex; align-items: center; gap: 0.42vw;
+	background: #2E6BE6; color: #fff; font-size: 0.6771vw; font-weight: 600;
+	padding: 0.32vw 0.78vw; border-radius: 0.16vw; letter-spacing: 0.06em;
+	opacity: 0; transform: translateY(30%); transition: 0.6s;}
+.ps-tag::before{content: ""; width: 0.42vw; height: 0.42vw; border-radius: 50%; background: #fff; opacity: 0.85;}
+.ps-title{font-size: 2.02vw; font-weight: 800; color: #0F2740; line-height: 1.22em;
+	margin-top: 0.6vw; letter-spacing: -0.012em; opacity: 0; transform: translateY(30%); transition: 0.6s;}
+.ps-desc{font-size: 0.76vw; color: #4A6480; line-height: 1.6em; margin-top: 0.55vw;
+	max-width: 33vw; opacity: 0; transform: translateY(30%); transition: 0.6s;}
+.ps-chips{display: flex; gap: 0.5vw; margin-top: 0.75vw; opacity: 0; transform: translateY(30%); transition: 0.6s;}
+.ps-chips span{font-size: 0.64vw; font-weight: 500; color: #1B4FC4; background: rgba(255,255,255,0.94);
+	border: 1px solid rgba(46,107,230,0.22); border-radius: 0.32vw; padding: 0.26vw 0.56vw; white-space: nowrap;}
+
+/* ---------- 画面 1 左区：飞书对话界面 ---------- */
+.ps-chat{display: flex; flex: 1; min-height: 0; margin-top: 1vw;
+	background: #fff; border: 1px solid rgba(46,107,230,0.14); border-radius: 0.52vw;
+	overflow: hidden; box-shadow: 0 0.55vw 1.6vw rgba(15,39,64,0.12);
+	opacity: 0; transform: translateY(30%); transition: 0.8s;}
+.ps-side{width: 3.5vw; flex: none; background: #F3F7FD; border-right: 1px solid #E6EEF9;
+	padding: 0.7vw 0.3vw; display: flex; flex-direction: column; gap: 0.28vw;}
+.ps-side-item{font-size: 0.68vw; color: #7C90A8; text-align: center; line-height: 1.2;
+	padding: 0.46vw 0; border-radius: 0.24vw;}
+.ps-side-item.on{background: #E4EDFD; color: #1B4FC4; font-weight: 600;}
+.ps-main{flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 0.7vw 0.95vw 0.75vw;}
+.ps-head{flex: none; display: flex; align-items: center; gap: 0.42vw;
+	padding-bottom: 0.62vw; border-bottom: 1px solid #EDF2FA;}
+.ps-avatar{width: 1.35vw; height: 1.35vw; flex: none; border-radius: 0.28vw;
+	background: linear-gradient(135deg,#2E6BE6,#5C9BFF); color: #fff; font-style: normal;
+	font-family: 'RedHatDisplay'; font-size: 0.72vw; font-weight: 800;
+	display: flex; align-items: center; justify-content: center;}
+.ps-head b{font-size: 0.88vw; font-weight: 700; color: #0F2740; line-height: 1.2;}
+.ps-head span{font-size: 0.68vw; color: #8095AC; line-height: 1.2;}
+.ps-head em{margin-left: auto; font-style: normal; font-size: 0.62vw; color: #2E6BE6;
+	background: #EDF3FE; border-radius: 0.18vw; padding: 0.12vw 0.32vw; white-space: nowrap;}
+
+.ps-bubble{flex: 1; min-height: 0; margin-top: 0.62vw; background: #F2F7FF;
+	border: 1px solid #E2ECFB; border-radius: 0.4vw; padding: 0.85vw 1vw;
+	display: flex; flex-direction: column;}
+.ps-bubble-kicker{flex: none; font-family: 'RedHatDisplay'; font-size: 0.62vw; font-weight: 700;
+	color: #2E6BE6; letter-spacing: 0.12em; line-height: 1.2;}
+.ps-bubble-title{flex: none; font-size: 1.25vw; font-weight: 800; color: #0F2740;
+	line-height: 1.2; margin-top: 0.28vw;}
+.ps-bubble-sub{flex: none; font-size: 0.7vw; color: #6B8098; line-height: 1.3; margin-top: 0.18vw;}
+.ps-cards{flex: 1; min-height: 0; margin-top: 0.72vw;
+	display: grid; grid-template-columns: 1fr 1fr; gap: 0.7vw;}
+.ps-card{display: flex; flex-direction: column; background: #fff; border: 1px solid #E2ECFB;
+	border-radius: 0.32vw; padding: 0.6vw 0.72vw; box-shadow: 0 0.1vw 0.36vw rgba(15,39,64,0.05);}
+.ps-card-top{display: flex; align-items: center; justify-content: space-between; gap: 0.4vw;}
+.ps-card-top b{font-size: 0.95vw; font-weight: 700; color: #0F2740; line-height: 1.2;}
+.ps-card-top i{flex: none; font-style: normal; font-size: 0.62vw; font-weight: 600;
+	color: #B4761A; background: #FFF4E2; border-radius: 0.16vw; padding: 0.12vw 0.3vw;}
+.ps-card p{font-size: 0.76vw; color: #5D7590; line-height: 1.55; margin-top: 0.34vw;}
+.ps-card span{display: block; font-size: 0.68vw; color: #8095AC; margin-top: auto; padding-top: 0.5vw;}
+.ps-card em{font-style: normal; font-size: 0.72vw; font-weight: 600; color: #2E6BE6;
+	margin-top: 0.34vw; padding-top: 0.34vw; border-top: 1px solid #EEF3FB;}
+.ps-note{flex: none; position: relative; margin-top: 0.6vw; padding-left: 0.62vw;
+	font-size: 0.58vw; color: #7C90A8; line-height: 1.3;}
+.ps-note::before{content: ""; position: absolute; left: 0; top: 0.2vw;
+	width: 0.2vw; height: 0.2vw; border-radius: 50%; background: #8FAFCB;}
+.ps-input{flex: none; height: 2.2vw; margin-top: 0.6vw; display: flex; align-items: center; gap: 0.5vw;
+	background: #fff; border: 1px solid #E2ECFB; border-radius: 0.32vw; padding: 0 0.62vw;}
+.ps-input span{font-size: 0.68vw; color: #9DAEBF; line-height: 1.2;}
+.ps-input i{margin-left: auto; flex: none; width: 1.3vw; height: 1.3vw; border-radius: 0.2vw;
+	background: #2E6BE6; color: #fff; font-style: normal; font-size: 0.5vw;
+	display: flex; align-items: center; justify-content: center;}
+
+/* ---------- 画面 1 右区：4×25% ---------- */
+.ps-hero .rig{width: 37.5%; flex: none; z-index: 1;}
+.ps-list{height: 100%; list-style: none;}
+.ps-list li{height: 25%; display: grid; grid-template-columns: 2.1vw 1fr; align-items: center;
+	column-gap: 0.85vw; padding: 0 2.6vw 0 1.65vw;}
+.ps-list li:last-child{padding-right: 4.4vw;}
+.ps-list li em{font-family: 'RedHatDisplay'; font-style: normal; font-size: 1.05vw; font-weight: 800;
+	color: #2E6BE6; line-height: 1; opacity: 0; transform: translateY(30%); transition: 0.6s;}
+.ps-list li div{opacity: 0; transform: translateY(30%); transition: 0.6s;
+	border-left: 1px solid rgba(46,107,230,0.18); padding-left: 0.85vw;}
+.ps-list li strong{display: block; font-size: 0.92vw; font-weight: 700; color: #0F2740;
+	line-height: 1.25; letter-spacing: 0.01em;}
+.ps-list li p{font-size: 0.74vw; color: #4A6480; line-height: 1.55; margin-top: 0.3vw;}
+
+/* ---------- 画面 2 栅格 ---------- */
+.ps-arch .lef,
+.ps-arch .rig{width: 50%; height: 100%; z-index: 1;}
+.ps-arch .top{height: 28%; display: flex; align-items: center; padding: 0 1.95vw;}
+.ps-arch .rig .top{padding: 0 1.9vw 0 1.7vw;}
+.ps-arch .bot{height: 72%; padding: 0 1.95vw 1.7vw;}
+.ps-arch .rig .bot{padding: 0 1.9vw 1.7vw 1.7vw;}
+.ps-arch .lef .bot{display: flex; flex-direction: column; justify-content: center;}
+.ps-sec{font-size: 2.02vw; font-weight: 800; color: #0F2740; line-height: 1.24; letter-spacing: -0.01em;
+	opacity: 0; transform: translateX(-8%); transition: 0.6s;}
+.ps-sec.sub{position: relative; font-size: 1.5vw; padding-left: 1.05vw;}
+.ps-sec.sub::before{content: ""; position: absolute; left: 0; top: 0.26vw;
+	width: 0.22vw; height: 1.05vw; border-radius: 0.11vw; background: #2E6BE6;}
+
+/* ---------- 画面 2 左区：链路 ---------- */
+.ps-flow{display: flex; flex-direction: column; gap: 0.42vw;}
+.ps-node{display: grid; grid-template-columns: 1.45vw 1fr; grid-template-rows: auto auto;
+	align-items: center; column-gap: 0.72vw; padding: 0.6vw 0.9vw;
+	background: #fff; border: 1px solid rgba(46,107,230,0.16); border-radius: 0.36vw;
+	box-shadow: 0 0.14vw 0.5vw rgba(15,39,64,0.05);
+	opacity: 0; transform: translateY(24%); transition: 0.6s;}
+.ps-node-ico{grid-row: 1 / 3; width: 1.45vw; height: 1.45vw; border-radius: 50%;
+	background: #E7F0FE; color: #1B4FC4; font-family: 'RedHatDisplay'; font-style: normal;
+	font-size: 0.7vw; font-weight: 800; display: flex; align-items: center; justify-content: center;}
+.ps-node b{font-size: 0.86vw; font-weight: 700; color: #0F2740; line-height: 1.25;}
+.ps-node span{font-size: 0.66vw; color: #6B8098; line-height: 1.3; margin-top: 0.14vw;}
+.ps-node.sm{grid-template-columns: 1fr; padding: 0.5vw 0.9vw;}
+.ps-node.sm b{font-size: 0.8vw;}
+.ps-node.sm span{font-size: 0.62vw;}
+.ps-col{display: flex; flex-direction: column; gap: 0.42vw;}
+.ps-link{display: flex; align-items: center; gap: 0.5vw; height: 1.55vw; padding-left: 0.62vw;}
+.ps-link i{position: relative; flex: none; width: 0.1vw; height: 100%; background: #9FBEE8;}
+.ps-link i::after{content: ""; position: absolute; left: 50%; bottom: -0.02vw; transform: translateX(-50%);
+	border-left: 0.15vw solid transparent; border-right: 0.15vw solid transparent;
+	border-top: 0.2vw solid #9FBEE8;}
+.ps-link em{font-style: normal; font-size: 0.6vw; color: #7C90A8; letter-spacing: 0.06em;}
+
+.ps-alt{margin-top: 1vw; display: flex; align-items: baseline; gap: 0.72vw;
+	background: #0F2740; border-radius: 0.36vw; padding: 0.72vw 0.95vw;
+	opacity: 0; transform: translateY(24%); transition: 0.6s;}
+.ps-alt b{flex: none; font-family: 'RedHatDisplay'; font-size: 0.8vw; font-weight: 800;
+	color: #7FB2FF; letter-spacing: 0.04em;}
+.ps-alt span{font-size: 0.66vw; color: rgba(255,255,255,0.74); line-height: 1.5;}
+
+/* ---------- 画面 2 右区：安全边界 ---------- */
+.ps-safe{height: 100%; display: flex; flex-direction: column; gap: 0.8vw; list-style: none;}
+.ps-safe li{flex: 1; display: flex; flex-direction: column; justify-content: center;
+	padding: 0 1.1vw; background: #fff; border: 1px solid rgba(46,107,230,0.16);
+	border-radius: 0.42vw; box-shadow: 0 0.14vw 0.6vw rgba(15,39,64,0.05);
+	opacity: 0; transform: translateY(24%); transition: 0.6s;}
+.ps-safe li em{align-self: flex-start; font-family: 'RedHatDisplay'; font-style: normal;
+	font-size: 0.66vw; font-weight: 800; color: #2E6BE6; letter-spacing: 0.1em; line-height: 1;
+	background: #EAF1FE; border-radius: 0.16vw; padding: 0.24vw 0.36vw;}
+.ps-safe li strong{font-size: 0.94vw; font-weight: 700; color: #0F2740; line-height: 1.25; margin-top: 0.36vw;}
+.ps-safe li p{font-size: 0.72vw; color: #4A6480; line-height: 1.5; margin-top: 0.26vw; max-width: 92%;}
+
+/* ---------- 动画触发 ---------- */
+.sd_start .ani .swiper-slide-active .ps-hero .lef .bg{opacity: 1; transform: none; transition-delay: 0.2s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-tag{opacity: 1; transform: none; transition-delay: 0.4s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-title{opacity: 1; transform: none; transition-delay: 0.6s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-desc{opacity: 1; transform: none; transition-delay: 0.8s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-chips{opacity: 1; transform: none; transition-delay: 1s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-chat{opacity: 1; transform: none; transition-delay: 1.2s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(1) em,
+.sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(1) div{opacity: 1; transform: none; transition-delay: 1.4s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(2) em,
+.sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(2) div{opacity: 1; transform: none; transition-delay: 1.65s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(3) em,
+.sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(3) div{opacity: 1; transform: none; transition-delay: 1.9s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(4) em,
+.sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(4) div{opacity: 1; transform: none; transition-delay: 2.15s;}
+
+.sd_start .ani .swiper-slide-active .ps-arch .lef .top .ps-sec{opacity: 1; transform: none; transition-delay: 0.6s;}
+.sd_start .ani .swiper-slide-active .ps-arch .rig .top .ps-sec{opacity: 1; transform: none; transition-delay: 0.8s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-flow .ps-node:nth-child(1){opacity: 1; transform: none; transition-delay: 1.1s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-flow .ps-link:nth-child(2){opacity: 1; transform: none; transition-delay: 1.3s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-flow .ps-node:nth-child(3){opacity: 1; transform: none; transition-delay: 1.5s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-flow .ps-link:nth-child(4){opacity: 1; transform: none; transition-delay: 1.7s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-flow .ps-col .ps-node:nth-child(1){opacity: 1; transform: none; transition-delay: 1.9s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-flow .ps-col .ps-node:nth-child(2){opacity: 1; transform: none; transition-delay: 2.05s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-alt{opacity: 1; transform: none; transition-delay: 2.3s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-safe li:nth-child(1){opacity: 1; transform: none; transition-delay: 1.3s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-safe li:nth-child(2){opacity: 1; transform: none; transition-delay: 1.5s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-safe li:nth-child(3){opacity: 1; transform: none; transition-delay: 1.7s;}
+.sd_start .ani .swiper-slide-active .ps-arch .ps-safe li:nth-child(4){opacity: 1; transform: none; transition-delay: 1.9s;}
+
+/* ---------- 超宽屏（21:10 以上）按 vh 换算 ---------- */
+@media all and (min-aspect-ratio:21/10){
+	.ps-left{padding: 3.0626vh 3.8484vh 2.9734vh 3.4109vh;}
+	.ps-tag{font-size: 1.185vh; padding: 0.56vh 1.3651vh; border-radius: 0.28vh; gap: 0.735vh;}
+	.ps-tag::before{width: 0.735vh; height: 0.735vh;}
+	.ps-title{font-size: 3.5352vh; margin-top: 1.0501vh;}
+	.ps-desc{font-size: 1.3301vh; margin-top: 0.9625vh; max-width: 57.7528vh;}
+	.ps-chips{margin-top: 1.3126vh; gap: 0.875vh;}
+	.ps-chips span{font-size: 1.1201vh; padding: 0.455vh 0.98vh; border-radius: 0.56vh;}
+	.ps-chat{margin-top: 1.7501vh; border-radius: 0.91vh; box-shadow: 0 0.9625vh 2.8001vh rgba(15,39,64,0.12);}
+	.ps-side{width: 6.1253vh; padding: 1.2251vh 0.525vh; gap: 0.49vh;}
+	.ps-side-item{font-size: 1.0501vh; padding: 0.735vh 0; border-radius: 0.42vh;}
+	.ps-main{padding: 1.2251vh 1.6626vh 1.3126vh;}
+	.ps-head{gap: 0.735vh; padding-bottom: 1.0851vh;}
+	.ps-avatar{width: 2.3626vh; height: 2.3626vh; border-radius: 0.49vh; font-size: 1.2601vh;}
+	.ps-head b{font-size: 1.3651vh;}
+	.ps-head span{font-size: 1.0501vh;}
+	.ps-head em{font-size: 0.98vh; padding: 0.21vh 0.56vh; border-radius: 0.315vh;}
+	.ps-bubble{margin-top: 1.0851vh; border-radius: 0.7vh; padding: 1.4876vh 1.7501vh;}
+	.ps-bubble-kicker{font-size: 0.98vh;}
+	.ps-bubble-title{font-size: 1.8376vh; margin-top: 0.49vh;}
+	.ps-bubble-sub{font-size: 1.0851vh; margin-top: 0.315vh;}
+	.ps-cards{margin-top: 1.2601vh; gap: 1.2251vh;}
+	.ps-card{border-radius: 0.56vh; padding: 1.0501vh 1.2601vh;}
+	.ps-card-top b{font-size: 1.4351vh;}
+	.ps-card-top i{font-size: 0.9625vh; padding: 0.21vh 0.525vh; border-radius: 0.28vh;}
+	.ps-card p{font-size: 1.1201vh; margin-top: 0.525vh;}
+	.ps-card span{font-size: 1.015vh; padding-top: 0.7vh;}
+	.ps-card em{font-size: 1.0851vh; margin-top: 0.385vh;}
+	.ps-note{font-size: 1.015vh; margin-top: 1.0501vh; padding-left: 1.0851vh;}
+	.ps-note::before{width: 0.35vh; height: 0.35vh; top: 0.35vh;}
+	.ps-input{height: 3.8502vh; margin-top: 1.0501vh; border-radius: 0.56vh; padding: 0 1.0851vh; gap: 0.875vh;}
+	.ps-input span{font-size: 1.0501vh;}
+	.ps-input i{width: 2.2751vh; height: 2.2751vh; border-radius: 0.35vh; font-size: 0.875vh;}
+	.ps-list li{grid-template-columns: 3.6752vh 1fr; column-gap: 1.4876vh; padding: 0 4.5502vh 0 2.8876vh;}
+	.ps-list li:last-child{padding-right: 7.7004vh;}
+	.ps-list li em{font-size: 1.8376vh;}
+	.ps-list li div{padding-left: 1.4876vh;}
+	.ps-list li strong{font-size: 1.6101vh;}
+	.ps-list li p{font-size: 1.2951vh; margin-top: 0.525vh;}
+	.ps-arch .top{padding: 0 3.4127vh;}
+	.ps-arch .rig .top{padding: 0 3.3252vh 0 2.9751vh;}
+	.ps-arch .bot{padding: 0 3.4127vh 2.9751vh;}
+	.ps-arch .rig .bot{padding: 0 3.3252vh 2.9751vh 2.9751vh;}
+	.ps-sec{font-size: 3.5352vh;}
+	.ps-sec.sub{font-size: 2.6251vh; padding-left: 1.8376vh;}
+	.ps-sec.sub::before{width: 0.385vh; height: 1.8376vh; top: 0.455vh; border-radius: 0.1925vh;}
+	.ps-flow{gap: 0.735vh;}
+	.ps-node{grid-template-columns: 2.5376vh 1fr; column-gap: 1.2601vh; padding: 1.0501vh 1.5751vh; border-radius: 0.63vh;}
+	.ps-node-ico{width: 2.5376vh; height: 2.5376vh; font-size: 1.2251vh;}
+	.ps-node b{font-size: 1.5051vh;}
+	.ps-node span{font-size: 1.1551vh; margin-top: 0.245vh;}
+	.ps-node.sm{padding: 0.875vh 1.5751vh;}
+	.ps-node.sm b{font-size: 1.4001vh;}
+	.ps-node.sm span{font-size: 1.0851vh;}
+	.ps-col{gap: 0.735vh;}
+	.ps-link{height: 2.7126vh; padding-left: 1.0851vh; gap: 0.875vh;}
+	.ps-link i{width: 0.175vh;}
+	.ps-link em{font-size: 1.0501vh;}
+	.ps-alt{margin-top: 1.7501vh; gap: 1.2601vh; border-radius: 0.63vh; padding: 1.2601vh 1.6626vh;}
+	.ps-alt b{font-size: 1.4001vh;}
+	.ps-alt span{font-size: 1.1551vh;}
+	.ps-safe{gap: 1.4001vh;}
+	.ps-safe li{padding: 0 1.9251vh; border-radius: 0.735vh;}
+	.ps-safe li em{font-size: 1.1551vh; padding: 0.42vh 0.63vh; border-radius: 0.28vh;}
+	.ps-safe li strong{font-size: 1.6451vh; margin-top: 0.63vh;}
+	.ps-safe li p{font-size: 1.2601vh; margin-top: 0.455vh;}
+}
+
+/* ---------- 竖屏 / 窄屏 ---------- */
+@media all and (max-aspect-ratio:12/10){
+	.box2 .line.type23,
+	.box2 .line.type25,
+	.box2 .line.type26,
+	.box2 .line.type27,
+	.box2 .line.type28,
+	.box2 .line.type29,
+	.box2 .line.type31,
+	.box2 .line.type37,
+	.box2 .line.type40,
+	.box2 .line.type41,
+	.box2 .line.__m{display: none;}
+	.box2 .swiper-slide .line.type22,
+	.box2 .swiper-slide .line.type24{top: 1.1458vw; height: calc(100% - 2.2917vw);}
+	.box2 .swiper-slide .line.type32,
+	.box2 .swiper-slide .line.type33{top: 1.1458vw; height: calc(60% - 1.1458vw);}
+	.box2 .swiper-slide .line.type34,
+	.box2 .swiper-slide .line.type35{top: 60%; bottom: auto; height: calc(40% - 1.1458vw);}
+	.box2.ani .swiper-slide-active .line.type38{left: 1.1458vw; top: 60%; width: calc(50% - 1.1458vw);}
+	.box2.ani .swiper-slide-active .line.type39{right: 1.1458vw; top: 60%; width: calc(50% - 1.1458vw);}
+	.ps-hero{flex-direction: column;}
+	.ps-hero .lef{width: 100%; height: 68%;}
+	.ps-hero .rig{width: 100%; height: 32%;}
+	.ps-left{padding: 2.8vw 4.2vw 2.6vw 4vw;}
+	.ps-tag{font-size: 1.4vw; padding: 0.55vw 1.2vw; border-radius: 0.4vw; gap: 0.8vw;}
+	.ps-tag::before{width: 0.75vw; height: 0.75vw;}
+	.ps-title{font-size: 3.2vw; margin-top: 0.9vw;}
+	.ps-desc{display: none;}
+	.ps-chips{display: none;}
+	.ps-chat{margin-top: 1.2vw; border-radius: 0.9vw; box-shadow: 0 0.9vw 2.2vw rgba(15,39,64,0.12);}
+	.ps-side{width: 5.8vw; padding: 1vw 0.45vw; gap: 0.45vw;}
+	.ps-side-item{font-size: 0.95vw; padding: 0.68vw 0; border-radius: 0.36vw;}
+	.ps-main{padding: 1vw 1.3vw 1.1vw;}
+	.ps-head{gap: 0.6vw; padding-bottom: 0.8vw;}
+	.ps-avatar{width: 2.1vw; height: 2.1vw; border-radius: 0.45vw; font-size: 1.1vw;}
+	.ps-head b{font-size: 1.3vw;}
+	.ps-head span{font-size: 0.98vw;}
+	.ps-head em{font-size: 0.92vw; padding: 0.22vw 0.55vw; border-radius: 0.3vw;}
+	.ps-bubble{margin-top: 0.9vw; border-radius: 0.7vw; padding: 1.1vw 1.3vw; overflow: hidden;}
+	.ps-bubble-kicker{font-size: 0.92vw;}
+	.ps-bubble-title{font-size: 1.8vw; margin-top: 0.4vw;}
+	.ps-bubble-sub{display: none;}
+	.ps-cards{margin-top: 0.9vw; gap: 0.95vw;}
+	.ps-card{border-radius: 0.55vw; padding: 0.85vw 1vw;}
+	.ps-card-top b{font-size: 1.3vw;}
+	.ps-card-top i{font-size: 0.9vw; padding: 0.22vw 0.55vw; border-radius: 0.28vw;}
+	.ps-card p{font-size: 1.05vw; line-height: 1.45; margin-top: 0.4vw;}
+	.ps-card span{font-size: 0.95vw; padding-top: 0.55vw;}
+	.ps-card em{font-size: 1vw; margin-top: 0.4vw; padding-top: 0.4vw;}
+	.ps-note{display: none;}
+	.ps-input{height: 3.2vw; margin-top: 0.9vw; border-radius: 0.55vw; padding: 0 1vw; gap: 0.7vw;}
+	.ps-input span{font-size: 1vw;}
+	.ps-input i{width: 2vw; height: 2vw; border-radius: 0.36vw; font-size: 0.85vw;}
+	.ps-list{display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 1.1vw; padding: 0 4.2vw 2.4vw;}
+	.ps-list li{height: auto; display: flex; align-items: center; gap: 1.2vw; padding: 0;}
+	.ps-list li:last-child{padding-right: 7vw;}
+	.ps-list li em{font-size: 1.9vw; flex: none;}
+	.ps-list li div{padding-left: 1.2vw;}
+	.ps-list li strong{font-size: 1.6vw;}
+	.ps-list li p{font-size: 1.2vw; margin-top: 0.35vw;}
+
+	.ps-arch{flex-direction: column;}
+	.ps-arch .lef{width: 100%; height: 60%;}
+	.ps-arch .rig{width: 100%; height: 40%;}
+	.ps-arch .top{height: 26%; padding: 0 4.2vw;}
+	.ps-arch .rig .top{padding: 0 4.2vw;}
+	.ps-arch .bot{height: 74%; padding: 0 4.2vw 2.4vw;}
+	.ps-arch .rig .bot{padding: 0 4.2vw 2.4vw;}
+	.ps-sec{font-size: 3vw;}
+	.ps-sec.sub{font-size: 2.7vw; padding-left: 1.8vw;}
+	.ps-sec.sub::before{width: 0.45vw; height: 1.9vw; top: 0.5vw; border-radius: 0.22vw;}
+	.ps-flow{gap: 0.6vw;}
+	.ps-node{grid-template-columns: 2.8vw 1fr; column-gap: 1.2vw; padding: 0.9vw 1.5vw; border-radius: 0.65vw;}
+	.ps-node-ico{width: 2.8vw; height: 2.8vw; font-size: 1.3vw;}
+	.ps-node b{font-size: 1.6vw;}
+	.ps-node span{font-size: 1.2vw; margin-top: 0.18vw;}
+	.ps-node.sm{padding: 0.8vw 1.5vw;}
+	.ps-node.sm b{font-size: 1.5vw;}
+	.ps-node.sm span{font-size: 1.15vw;}
+	.ps-col{gap: 0.6vw;}
+	.ps-link{height: 2.4vw; padding-left: 1vw; gap: 0.8vw;}
+	.ps-link em{font-size: 1.05vw;}
+	.ps-alt{display: none;}
+	.ps-safe{display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 1.1vw;}
+	.ps-safe li{padding: 0 1.8vw; border-radius: 0.75vw;}
+	.ps-safe li:last-child{padding-right: 9vw;}
+	.ps-safe li em{font-size: 1.2vw; padding: 0.42vw 0.65vw; border-radius: 0.28vw;}
+	.ps-safe li strong{font-size: 1.7vw; margin-top: 0.5vw;}
+	.ps-safe li p{font-size: 1.25vw; margin-top: 0.4vw; max-width: 100%;}
+}
