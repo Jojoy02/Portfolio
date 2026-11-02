@@ -1010,17 +1010,19 @@ $(function() {
 						</li>
 <!--
                             ====================================================
-                            栏目 4：设计作品合集 / 户型指南
+                            栏目 4：设计作品合集
                             ====================================================
                             .sd4 共五个画面：
-                            0 总览、1 高端办公、2 分区办公、3 办公楼层、4 商业楼层。
-                            总览的四个按钮会调用 sd4.slideTo() 跳转到对应画面。
+                            0 作品索引、1 PAPERVERSE、2 CARBON NAVICART、
+                            3 RADLEVEL CARE、4 NEMED。
+                            索引的四个按钮会调用 sd4.slideTo() 跳转到对应画面；
+                            详情页右侧缩略图点击可切换主图（global.js）。
                         -->
                         <li class="box4">
 							<div class="area">
                                 <div class="sd_area sd4 acting no_cube">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
+										<div class="swiper-slide">
 											<div class="line type1 fix"></div>
 											<div class="line type3 fix"></div>
 											<div class="line type67 fix"></div>
@@ -1035,1651 +1037,193 @@ $(function() {
 											<div class="line type76"></div>
 											<div class="line type77"></div>
 											<!--
-											    户型画面 1：四类规划入口
-											    p1 至 p4 的 hover 会切换背景透视区域；
-											    点击后由 global.js 移除 no_cube 并进入目标 Swiper 页。
+											    画面 1：设计作品合集索引
+											    四行对应四个项目，hover 时 .bg 换到对应行并显示该项目封面，
+											    点击进入 .sd4 的第 1—4 个画面（交互由 global.js 处理）。
 											-->
-											<div class="unit_plan">
-												<div class="bg"><span><em></em></span></div>
+											<div class="unit_plan work-index">
+												<div class="bg"></div>
 												<ul>
-													<li class="p1">
-														<button>
-															<p>高端办公户型</p>
-															<span>高端办公户型指南</span>
-														</button>
-													</li>
-													<li class="p2">
-														<button>
-															<p>分区办公户型</p>
-															<span>分区办公户型指南</span>
-														</button>
-													</li>
-													<li class="p3">
-														<button>
-															<p>办公楼层规划</p>
-															<span>办公楼层指南</span>
-														</button>
-													</li>
-													<li class="p4">
-														<button>
-															<p>商业楼层规划</p>
-															<span>商业设施楼层指南</span>
-														</button>
-													</li>
+											<li class="p1">
+												<button>
+													<em class="wi-num">01</em>
+													<div class="wi-name">
+														<p>PAPERVERSE</p>
+														<span>儿童互动剪纸叙事产品 · 元宇宙语境下的传统技艺体验</span>
+													</div>
+													<div class="wi-tags"><i>服务设计</i><i>产品设计</i><i>交互设计</i></div>
+													<div class="wi-thumb"><img src="images/work/paperverse-1.jpg" alt=""></div>
+													<b class="wi-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg></b>
+												</button>
+											</li>
+											<li class="p2">
+												<button>
+													<em class="wi-num">02</em>
+													<div class="wi-name">
+														<p>CARBON NAVICART</p>
+														<span>低碳数字化购物服务设计 · 智能购物车与可穿戴手环</span>
+													</div>
+													<div class="wi-tags"><i>服务设计</i><i>购物体验</i><i>低碳设计</i></div>
+													<div class="wi-thumb"><img src="images/work/carbon-1.jpg" alt=""></div>
+													<b class="wi-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg></b>
+												</button>
+											</li>
+											<li class="p3">
+												<button>
+													<em class="wi-num">03</em>
+													<div class="wi-name">
+														<p>RADLEVEL CARE</p>
+														<span>核素分级诊疗系统 · 居家检测与分级医疗指导</span>
+													</div>
+													<div class="wi-tags"><i>服务设计</i><i>产品设计</i><i>Group Work</i></div>
+													<div class="wi-thumb"><img src="images/work/radlevel-1.jpg" alt=""></div>
+													<b class="wi-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg></b>
+												</button>
+											</li>
+											<li class="p4">
+												<button>
+													<em class="wi-num">04</em>
+													<div class="wi-name">
+														<p>NEMED</p>
+														<span>城乡校园废纸回收与利用服务设计 · 厦门</span>
+													</div>
+													<div class="wi-tags"><i>服务设计</i><i>环境保护</i><i>可持续</i></div>
+													<div class="wi-thumb"><img src="images/work/nemed-1.jpg" alt=""></div>
+													<b class="wi-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12.5 6l6 6-6 6"/></svg></b>
+												</button>
+											</li>
 												</ul>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="line type1 fix"></div>
-											<div class="line type78"></div>
-											<div class="line type79"></div>
-											<div class="line type80"></div>
-											<div class="line type81"></div>
-											<div class="line type82"></div>
-											<div class="line type83"></div>
-											<div class="line type84"></div>
-											<div class="line type85"></div>
-											<div class="line type86"></div>
-											<!--
-											    户型画面 2：高端办公
-											    .unit_tab 中的 15 个标签与 .unit_box 中的 15 个详情项
-											    严格按索引对应。新增或删除户型时必须同时修改两处。
-											    每个详情包含单元数、专有面积、合同面积、位置图和平面图。
-											-->
-											<div class="p_o_p plan">
-												<div class="top">
-													<em class="hor t_h h1"></em>
-													<em class="hor t_h h2"></em>
-													<em class="hor t_h h3"></em>
-													<em class="hor t_h h4"></em>
-													<em class="hor t_h h5"></em>
-													<em class="hor t_h h6"></em>
-													<em class="hor t_h h7"></em>
-													<em class="hor b_h h1"></em>
-													<em class="hor b_h h2"></em>
-													<em class="hor b_h h3"></em>
-													<em class="hor b_h h4"></em>
-													<em class="hor b_h h5"></em>
-													<em class="hor b_h h6"></em>
-													<em class="hor b_h h7"></em>
-													<em class="ver v1"></em>
-													<em class="ver v2"></em>
-													<em class="ver v3"></em>
-													<em class="ver v4"></em>
-													<em class="ver v5"></em>
-													<em class="ver v6"></em>
-													<em class="ver v7"></em>
-													<em class="ver v8"></em>
-													<ul class="unit_tab">
-														<li class="t1 on">P 2-A 1</li>
-														<li class="t2">P 2-A 2</li>
-														<li class="t2">P 2-A 3</li>
-														<li class="t2">P 2-A1T</li>
-														<li class="t2">P 2-A2T</li>
-														<li class="t2">P 2-A3T</li>
-														<li class="t2">P 2-B 1</li>
-														<li class="t3">P 2-B 2</li>
-														<li class="t4">P 1 -B 1</li>
-														<li class="t5">P 1 -B 2</li>
-														<li class="t5">P 1 -B 3</li>
-														<li class="t5">P 1 -D 1</li>
-														<li class="t5">P 1 -D 2</li>
-														<li class="t5">P 1 -D 3</li>
-														<li class="t5">P 1 -D 4</li>
-													</ul>
+											<div class="line type3 fix"></div>
+											<div class="line type67 fix"></div>
+											<div class="line type68 fix"></div>
+											<div class="line type69 fix"></div>
+											<div class="line type70 fix"></div>
+											<div class="line type71 fix"></div>
+											<div class="line type72 fix"></div>
+											<div class="line type73 fix"></div>
+											<div class="line type74 fix"></div>
+											<div class="line type150"></div>
+											<!-- 画面：PAPERVERSE 项目详情 -->
+											<div class="work-detail">
+												<div class="lef">
+													<div class="wd-idx"><em>01</em> / 04</div>
+													<h3 class="wd-en">PAPERVERSE</h3>
+													<p class="wd-cn">儿童互动剪纸叙事产品</p>
+													<p class="wd-desc">此项目利用元宇宙的未来性与学龄期儿童的创造性为传统剪纸注入新活力，让儿童在体验和创造中学习传统剪纸技艺，同时体会其更深的文化意义和艺术的魅力。</p>
+													<ul class="wd-meta"><li><em>类型</em><span>服务设计 / 产品设计 / 交互设计</span></li><li><em>关键词</em><span>传统剪纸 · 元宇宙 · 儿童创造力</span></li><li><em>年份</em><span>2023</span></li></ul>
 												</div>
-												<div class="bot">
-													<ul class="unit_box">
-														<li class="on">
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">105</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>39.4000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>85.2628<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key1.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img1.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">15</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>41.6200<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>90.0669<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key2.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img2.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">15</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>46.8000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>101.2764<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key3.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img3.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">54</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>39.4000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>85.2628<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key4.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img4.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">18</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>41.6200<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>90.0669<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key5.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img5.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">9</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>46.8000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>101.2764<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key6.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img6.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">42</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>43.4900<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>94.1136<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key7.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img7.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">24</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>45.9500<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>99.4371<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key8.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img8.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">54</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>28.5700<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>61.8263<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key9.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img9.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">30</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>28.5700<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>61.8263<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key10.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img10.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">9</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>38.5100<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>83.3367<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key11.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img11.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">45</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>34.7200<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>75.1351<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key12.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img12.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">9</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>37.2400<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>80.5885<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key13.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img13.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">9</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>30.1000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>65.1373<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key14.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img14.png?ver=1" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">9</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>30.1000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>65.1373<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>高端办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/p-o-key15.svg" alt=""></div>
-																	<div class="img"><img src="images/p-o-img15.png?ver=2" alt=""></div>
-																</div>
-															</div>
-														</li>
-													</ul>
+												<div class="rig">
+													<div class="wd-stage"><img class="wd-main" src="images/work/paperverse-1.jpg" alt="PAPERVERSE"></div>
+													<div class="wd-thumbs">
+													<button class="on" data-src="images/work/paperverse-1.jpg"><img src="images/work/paperverse-1.jpg" alt=""></button>
+													<button data-src="images/work/paperverse-2.jpg"><img src="images/work/paperverse-2.jpg" alt=""></button>
+													<button data-src="images/work/paperverse-3.jpg"><img src="images/work/paperverse-3.jpg" alt=""></button>
+													<button data-src="images/work/paperverse-4.jpg"><img src="images/work/paperverse-4.jpg" alt=""></button>
+													<button data-src="images/work/paperverse-5.jpg"><img src="images/work/paperverse-5.jpg" alt=""></button>
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="line type1 fix"></div>
-											<div class="line type78"></div>
-											<div class="line type79"></div>
-											<div class="line type80"></div>
-											<div class="line type81"></div>
-											<div class="line type87"></div>
-											<div class="line type88"></div>
-											<div class="line type89"></div>
-											<div class="line type90"></div>
-											<div class="line type91"></div>
-											<!--
-											    户型画面 3：分区办公
-											    结构与高端办公相同，共 20 个标签和 20 个详情项。
-											    s-o-key 表示楼层定位图，s-o-img 表示单元平面图。
-											-->
-											<div class="s_o_p plan">
-												<div class="top">
-													<em class="hor t_h h1"></em>
-													<em class="hor t_h h2"></em>
-													<em class="hor t_h h3"></em>
-													<em class="hor t_h h4"></em>
-													<em class="hor t_h h5"></em>
-													<em class="hor t_h h6"></em>
-													<em class="hor t_h h7"></em>
-													<em class="hor t_h h8"></em>
-													<em class="hor t_h h9"></em>
-													<em class="hor b_h h1"></em>
-													<em class="hor b_h h2"></em>
-													<em class="hor b_h h3"></em>
-													<em class="hor b_h h4"></em>
-													<em class="hor b_h h5"></em>
-													<em class="hor b_h h6"></em>
-													<em class="hor b_h h7"></em>
-													<em class="hor b_h h8"></em>
-													<em class="hor b_h h9"></em>
-													<em class="ver v1"></em>
-													<em class="ver v2"></em>
-													<em class="ver v3"></em>
-													<em class="ver v4"></em>
-													<em class="ver v5"></em>
-													<em class="ver v6"></em>
-													<em class="ver v7"></em>
-													<em class="ver v8"></em>
-													<em class="ver v9"></em>
-													<em class="ver v10"></em>
-													<em class="ver v11 __m"></em>
-													<em class="ver v12 __m"></em>
-													<em class="ver v13 __m"></em>
-													<ul class="unit_tab">
-														<li class="t1 on">S 1 -A 1</li>
-														<li class="t2">S 1 -A 2</li>
-														<li class="t2">S 1 -B 1</li>
-														<li class="t2">S 1 -B 2</li>
-														<li class="t2">S 1 -B 3</li>
-														<li class="t2">S 1 -C 1</li>
-														<li class="t2">S 1 -C 2</li>
-														<li class="t2">S 1 -C 3</li>
-														<li class="t2">S 1 -C 4</li>
-														<li class="t3">S 1 -D 1</li>
-														<li class="t4">S 1 -D3</li>
-														<li class="t5">S 1 -D4</li>
-														<li class="t5">S 2-A 1</li>
-														<li class="t5">S 2-A 2</li>
-														<li class="t5">S 2-A 3</li>
-														<li class="t5">S 2-A1T</li>
-														<li class="t5">S 2-A2T</li>
-														<li class="t5">S 2-A3T</li>
-														<li class="t5">S 2-B 1</li>
-														<li class="t6">S 2-B 2</li>
-													</ul>
+											<div class="line type3 fix"></div>
+											<div class="line type67 fix"></div>
+											<div class="line type68 fix"></div>
+											<div class="line type69 fix"></div>
+											<div class="line type70 fix"></div>
+											<div class="line type71 fix"></div>
+											<div class="line type72 fix"></div>
+											<div class="line type73 fix"></div>
+											<div class="line type74 fix"></div>
+											<div class="line type150"></div>
+											<!-- 画面：CARBON NAVICART 项目详情 -->
+											<div class="work-detail">
+												<div class="lef">
+													<div class="wd-idx"><em>02</em> / 04</div>
+													<h3 class="wd-en">CARBON NAVICART</h3>
+													<p class="wd-cn">低碳数字化购物服务设计</p>
+													<p class="wd-desc">“Carbon Navicart” 是一个基于无介质全息显示技术的智能购物解决方案。它包括一款智能购物车和可穿戴的购物手环，以及配套的客户端 APP。购物车能够实时显示商品的碳足迹，推荐低碳替代品，帮助消费者在购物时做出环保的决策。</p>
+													<ul class="wd-meta"><li><em>类型</em><span>服务设计 / 购物体验 / 低碳设计</span></li><li><em>关键词</em><span>无介质全息 · 碳足迹 · 可持续消费</span></li><li><em>年份</em><span>2023</span></li></ul>
 												</div>
-												<div class="bot">
-													<ul class="unit_box">
-														<li class="on">
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">17</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>28.3000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>61.2420<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key1.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img1.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">11</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>27.6800<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>59.9003<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key2.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img2.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">8</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>28.5700<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>61.8263<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key3.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img3.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">4</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>28.5700<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>61.8263<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key4.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img4.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">2</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>38.5100<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>83.3367<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key5.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img5.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">55</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>28.4500<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>61.5666<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key6.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img6.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">9</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>30.2400<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>65.4402<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key7.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img7.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">11</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>24.6000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>53.2352<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key8.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img8.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">11</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>24.6000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>53.2351<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key9.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img9.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">10</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>34.7200<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>75.1351<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key10.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img10.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">2</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>30.1000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>65.1354<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key11.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img11.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">2</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>30.1000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>65.1354<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key12.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img12.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">14</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>39.4000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>85.2628<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key13.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img13.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">2</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>41.6200<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>90.0669<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key14.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img14.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">2</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>46.8000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>101.2764<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key15.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img15.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">12</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>39.4000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>85.2628<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key16.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img16.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">4</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>41.6200<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>90.0669<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key17.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img17.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">2</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>46.8000<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>101.2764<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key18.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img18.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">8</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>43.4900<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>94.1136<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key19.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img19.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<ul>
-																		<li>
-																			<p>
-																				<span>总单元数</span>
-																				<strong class="let">4</strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>专有面积</span>
-																				<strong>45.9500<em>㎡</em></strong>
-																			</p>
-																		</li>
-																		<li>
-																			<p>
-																				<span>合同面积</span>
-																				<strong>99.4371<em>㎡</em></strong>
-																			</p>
-																		</li>
-																	</ul>
-																	<div class="bor b1"></div>
-																	<div class="bor b2"></div>
-																</div>
-																<div class="rig">
-																	<div class="tit"><p>分区办公<br>单元</p></div>
-																	<div class="key_map"><img src="images/s-o-key20.svg" alt=""></div>
-																	<div class="img"><img src="images/s-o-img20.png?ver=3" alt=""></div>
-																	<div class="ori"><div class="img"><img src="images/s-o-ori.svg" alt=""></div></div>
-																</div>
-															</div>
-														</li>
-													</ul>
+												<div class="rig">
+													<div class="wd-stage"><img class="wd-main" src="images/work/carbon-1.jpg" alt="CARBON NAVICART"></div>
+													<div class="wd-thumbs">
+													<button class="on" data-src="images/work/carbon-1.jpg"><img src="images/work/carbon-1.jpg" alt=""></button>
+													<button data-src="images/work/carbon-2.jpg"><img src="images/work/carbon-2.jpg" alt=""></button>
+													<button data-src="images/work/carbon-3.jpg"><img src="images/work/carbon-3.jpg" alt=""></button>
+													<button data-src="images/work/carbon-4.jpg"><img src="images/work/carbon-4.jpg" alt=""></button>
+													<button data-src="images/work/carbon-5.jpg"><img src="images/work/carbon-5.jpg" alt=""></button>
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="line type1 fix"></div>
-											<div class="line type92"></div>
-											<div class="line type93"></div>
-											<div class="line type94"></div>
-											<div class="line type95"></div>
-											<div class="line type96"></div>
-											<div class="line type97"></div>
-											<div class="line type98"></div>
-											<div class="line type99"></div>
-											<div class="line type100"></div>
-											<!--
-											    户型画面 4：办公楼层
-											    顶部标签对应 4 层、5–9 层、10 层、11–18 层、19 层和 20 层。
-											    .unit_tab 与 .unit_box 仍通过相同索引完成内容切换。
-											-->
-											<div class="o_f_p plan">
-												<div class="top">
-													<em class="hor t_h h1"></em>
-													<em class="hor t_h h2"></em>
-													<em class="hor t_h h3"></em>
-													<em class="hor t_h h4"></em>
-													<em class="hor t_h h5"></em>
-													<ul class="unit_tab">
-														<li class="t1 on">4层</li>
-														<li class="t2">5–9层</li>
-														<li class="t2">10层</li>
-														<li class="t2">11–18层</li>
-														<li class="t2">19层</li>
-														<li class="t3">20层</li>
-													</ul>
+											<div class="line type3 fix"></div>
+											<div class="line type67 fix"></div>
+											<div class="line type68 fix"></div>
+											<div class="line type69 fix"></div>
+											<div class="line type70 fix"></div>
+											<div class="line type71 fix"></div>
+											<div class="line type72 fix"></div>
+											<div class="line type73 fix"></div>
+											<div class="line type74 fix"></div>
+											<div class="line type150"></div>
+											<!-- 画面：RADLEVEL CARE 项目详情 -->
+											<div class="work-detail">
+												<div class="lef">
+													<div class="wd-idx"><em>03</em> / 04</div>
+													<h3 class="wd-en">RADLEVEL CARE</h3>
+													<p class="wd-cn">核素分级诊疗系统</p>
+													<p class="wd-desc">在福岛核污水排放导致的核素积累背景下，设计一个核素分级诊疗系统，以减少恐慌造成的医疗挤兑。通过 APP 与核素检测马桶帮助市民居家检测、缓解焦虑，并提供分级医疗指导；帮助医疗机构高效且有针对性开展治疗研究，同时协调多方数据，帮助政府掌握市民健康状况。</p>
+													<ul class="wd-meta"><li><em>类型</em><span>服务设计 / 产品设计</span></li><li><em>关键词</em><span>核素检测 · 分级诊疗 · 居家健康</span></li><li><em>合作</em><span>Group Work</span></li></ul>
 												</div>
-												<div class="bot">
-													<ul class="unit_box">
-														<li class="on">
-															<div class="iso">
-																<div class="lef">
-																	<div class="list list1"><img src="images/o-f-list1.svg" alt=""></div>
-																</div>
-																<div class="rig">
-																	<div class="tit">
-																		<dl>
-																			<dt>4层平面图</dt>
-																			<dd>地上 4 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c1"><em></em>高端办公</span>
-																			<span class="c2"><em></em>分区办公</span>
-																			<span class="c3"><em></em>住宿设施</span>
-																		</div>
-																	</div>
-																	<div class="img"><img src="images/o-f-img1.png" alt=""></div>
-																	<div class="ori">
-																		<p>办公楼层规划</p>
-																		<div class="img"><img src="images/o-f-ori.svg" alt=""></div>
-																	</div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<div class="list list2"><img src="images/o-f-list2.svg" alt=""></div>
-																</div>
-																<div class="rig">
-																	<div class="tit">
-																		<dl>
-																			<dt>5–9层平面图</dt>
-																			<dd>地上 5–9 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c1"><em></em>高端办公</span>
-																			<span class="c2"><em></em>分区办公</span>
-																			<span class="c3"><em></em>住宿设施</span>
-																		</div>
-																	</div>
-																	<div class="img"><img src="images/o-f-img2.png" alt=""></div>
-																	<div class="ori">
-																		<p>办公楼层规划</p>
-																		<div class="img"><img src="images/o-f-ori.svg" alt=""></div>
-																	</div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<div class="list list3"><img src="images/o-f-list3.svg" alt=""></div>
-																</div>
-																<div class="rig">
-																	<div class="tit">
-																		<dl>
-																			<dt>10层平面图</dt>
-																			<dd>地上 10 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c1"><em></em>高端办公</span>
-																			<span class="c2"><em></em>分区办公</span>
-																		</div>
-																	</div>
-																	<div class="img"><img src="images/o-f-img3.png" alt=""></div>
-																	<div class="ori">
-																		<p>办公楼层规划</p>
-																		<div class="img"><img src="images/o-f-ori.svg" alt=""></div>
-																	</div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<div class="list list4"><img src="images/o-f-list4.svg" alt=""></div>
-																</div>
-																<div class="rig">
-																	<div class="tit">
-																		<dl>
-																			<dt>11–18层平面图</dt>
-																			<dd>地上 11–18 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c1"><em></em>高端办公</span>
-																			<span class="c2"><em></em>分区办公</span>
-																		</div>
-																	</div>
-																	<div class="img"><img src="images/o-f-img4.png" alt=""></div>
-																	<div class="ori">
-																		<p>办公楼层规划</p>
-																		<div class="img"><img src="images/o-f-ori.svg" alt=""></div>
-																	</div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<div class="list list5"><img src="images/o-f-list5.svg" alt=""></div>
-																</div>
-																<div class="rig">
-																	<div class="tit">
-																		<dl>
-																			<dt>19层平面图</dt>
-																			<dd>地上 19 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c2"><em></em>分区办公</span>
-																		</div>
-																	</div>
-																	<div class="img"><img src="images/o-f-img5.png" alt=""></div>
-																	<div class="ori">
-																		<p>办公楼层规划</p>
-																		<div class="img"><img src="images/o-f-ori.svg" alt=""></div>
-																	</div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<div class="list list6"><img src="images/o-f-list6.svg" alt=""></div>
-																</div>
-																<div class="rig">
-																	<div class="tit">
-																		<dl>
-																			<dt>20层平面图</dt>
-																			<dd>地上 20 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c2"><em></em>分区办公</span>
-																		</div>
-																	</div>
-																	<div class="img"><img src="images/o-f-img6.png" alt=""></div>
-																	<div class="ori">
-																		<p>办公楼层规划</p>
-																		<div class="img"><img src="images/o-f-ori.svg" alt=""></div>
-																	</div>
-																</div>
-															</div>
-														</li>
-													</ul>
+												<div class="rig">
+													<div class="wd-stage"><img class="wd-main" src="images/work/radlevel-1.jpg" alt="RADLEVEL CARE"></div>
+													<div class="wd-thumbs">
+													<button class="on" data-src="images/work/radlevel-1.jpg"><img src="images/work/radlevel-1.jpg" alt=""></button>
+													<button data-src="images/work/radlevel-2.jpg"><img src="images/work/radlevel-2.jpg" alt=""></button>
+													<button data-src="images/work/radlevel-3.jpg"><img src="images/work/radlevel-3.jpg" alt=""></button>
+													<button data-src="images/work/radlevel-4.jpg"><img src="images/work/radlevel-4.jpg" alt=""></button>
+													<button data-src="images/work/radlevel-5.jpg"><img src="images/work/radlevel-5.jpg" alt=""></button>
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="line type1 fix"></div>
-											<div class="line type92"></div>
-											<div class="line type93"></div>
-											<div class="line type94"></div>
-											<div class="line type95"></div>
-											<div class="line type101"></div>
-											<div class="line type102"></div>
-											<div class="line type103"></div>
-											<div class="line type104"></div>
-											<div class="line type105"></div>
-											<!--
-											    户型画面 5：商业楼层
-											    第一组展示地下 1 层与 1 层，第二组展示 2 层与 3 层。
-											    JPG 提供底图，PNG 提供可叠加的平面信息；zoom_wrap 负责放大查看。
-											-->
-											<div class="r_f_p plan">
-												<div class="top">
-													<em class="hor t_h h1"></em>
-													<ul class="unit_tab">
-														<li class="t1 on">地下1层 <span>|</span> 1层</li>
-														<li class="t3">2层 <span>|</span> 3层</li>
-													</ul>
+											<div class="line type3 fix"></div>
+											<div class="line type67 fix"></div>
+											<div class="line type68 fix"></div>
+											<div class="line type69 fix"></div>
+											<div class="line type70 fix"></div>
+											<div class="line type71 fix"></div>
+											<div class="line type72 fix"></div>
+											<div class="line type73 fix"></div>
+											<div class="line type74 fix"></div>
+											<div class="line type150"></div>
+											<!-- 画面：NEMED 项目详情 -->
+											<div class="work-detail">
+												<div class="lef">
+													<div class="wd-idx"><em>04</em> / 04</div>
+													<h3 class="wd-en">NEMED</h3>
+													<p class="wd-cn">城乡校园废纸回收与利用服务设计</p>
+													<p class="wd-desc">本项目是为城市和农村学校的废纸回收和再利用而设计的系统，废纸处理系统通过设计废纸转换器、替换垃圾桶和应用程序来实现。</p>
+													<ul class="wd-meta"><li><em>类型</em><span>服务设计 / 环境保护 / 废纸回收</span></li><li><em>地点</em><span>厦门</span></li><li><em>周期</em><span>2022.2 – 2022.12 / 10 个月</span></li></ul>
 												</div>
-												<div class="bot">
-													<ul class="unit_box">
-														<li class="on">
-															<div class="iso">
-																<div class="lef">
-																	<div class="tit">
-																		<dl>
-																			<dt>地下1层平面图</dt>
-																			<dd>地下 1 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c1"><em></em>商业设施</span>
-																		</div>
-																	</div>
-																	<div class="img img1 __p">
-																		<div class="zoom_wrap">
-																			<img src="images/r-f-img1-1.jpg?ver=2" alt="" class="target" data-zoom="3">
-																		</div>
-																	</div>
-																	<div class="img __m"><img src="images/r-f-img1-1.png" alt=""></div>
-																	<div class="ori">
-																		<p>商业楼层规划</p>
-																		<div class="img"><img src="images/r-f-ori.svg" alt=""></div>
-																	</div>
-																</div>
-																<div class="rig">
-																	<div class="tit">
-																		<dl>
-																			<dt>1层平面图</dt>
-																			<dd>地上 1 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c1"><em></em>商业设施</span>
-																		</div>
-																	</div>
-																	<div class="img img2 __p">
-																		<div class="zoom_wrap">
-																			<img src="images/r-f-img1-2.jpg?ver=2" alt="" class="target" data-zoom="4">
-																		</div>
-																	</div>
-																	<div class="img __m"><img src="images/r-f-img1-2.png" alt=""></div>
-																</div>
-															</div>
-														</li>
-														<li>
-															<div class="iso">
-																<div class="lef">
-																	<div class="tit">
-																		<dl>
-																			<dt>2层平面图</dt>
-																			<dd>地上 2 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c1"><em></em>商业设施</span>
-																		</div>
-																	</div>
-																	<div class="img img3 __p">
-																		<div class="zoom_wrap">
-																			<img src="images/r-f-img2-1.jpg?ver=2" alt="" class="target" data-zoom="3">
-																		</div>
-																	</div>
-																	<div class="img __m"><img src="images/r-f-img2-1.png" alt=""></div>
-																	<div class="ori">
-																		<p>商业楼层规划</p>
-																		<div class="img"><img src="images/r-f-ori.svg" alt=""></div>
-																	</div>
-																</div>
-																<div class="rig">
-																	<div class="tit">
-																		<dl>
-																			<dt>3层平面图</dt>
-																			<dd>地上 3 层平面图</dd>
-																		</dl>
-																		<div class="color">
-																			<span class="c1"><em></em>商业设施</span>
-																		</div>
-																	</div>
-																	<div class="img img4 __p">
-																		<div class="zoom_wrap">
-																			<img src="images/r-f-img2-2.jpg?ver=2" alt="" class="target" data-zoom="3">
-																		</div>
-																	</div>
-																	<div class="img __m"><img src="images/r-f-img2-2.png" alt=""></div>
-																</div>
-															</div>
-														</li>
-													</ul>
+												<div class="rig">
+													<div class="wd-stage"><img class="wd-main" src="images/work/nemed-1.jpg" alt="NEMED"></div>
+													<div class="wd-thumbs">
+													<button class="on" data-src="images/work/nemed-1.jpg"><img src="images/work/nemed-1.jpg" alt=""></button>
+													<button data-src="images/work/nemed-2.jpg"><img src="images/work/nemed-2.jpg" alt=""></button>
+													<button data-src="images/work/nemed-3.jpg"><img src="images/work/nemed-3.jpg" alt=""></button>
+													<button data-src="images/work/nemed-4.jpg"><img src="images/work/nemed-4.jpg" alt=""></button>
+													<button data-src="images/work/nemed-5.jpg"><img src="images/work/nemed-5.jpg" alt=""></button>
+													</div>
 												</div>
 											</div>
 										</div>

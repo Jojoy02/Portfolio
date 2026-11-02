@@ -94,6 +94,14 @@ $(document).ready(function () {
     $(".unit_plan .bg").addClass("b4")
   })
 
+  //work detail：缩略图切换主图
+  $(document).on("click", ".wd-thumbs button", function () {
+    var src = $(this).attr("data-src")
+    if (!src) return
+    $(this).addClass("on").siblings("button").removeClass("on")
+    $(this).closest(".rig").find(".wd-main").attr("src", src)
+  })
+
   //unit tab
   $(document).on("click", ".unit_tab > li", function () {
     if ($(this).hasClass("on") == false) {
