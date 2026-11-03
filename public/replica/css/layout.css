@@ -3372,3 +3372,125 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.box5 .community1 .same-protocol{flex:1 1 auto;min-height:0;overflow:hidden;}
 	.box5 .community1 .same-protocol img{width:100%;height:100%;object-fit:cover;aspect-ratio:auto;}
 }
+
+/* ============================================================
+   栏目 6：其他（盲人积木教具 / 西南政法大学录取通知书）
+   左 38% 文字，右 62% 双图；原 50% 分隔线换到 38% 处。
+   ============================================================ */
+.box6 .line.type11{display:none;}
+.line.type160{left:calc(38% - 0.15625vw);top:1.1458vw;width:0.3125vw;
+	height:calc(100% - 2.2917vw);transform:scaleY(0);transform-origin:0 0;}
+.ani .swiper-slide-active .line.type160{transform:none;transition-delay:0.9s;}
+
+.oth{display:flex;height:100%;background:#fff;}
+.oth-lef,.oth-rig{position:relative;z-index:3;display:flex;flex-direction:column;
+	padding:1.75vw 2.05vw 1.7vw 1.95vw;}
+.oth-lef{width:38%;}
+.oth-rig{width:62%;padding-left:2.15vw;}
+
+.oth-kicker{font-family:'RedHatDisplay';font-size:0.62vw;font-weight:700;
+	letter-spacing:0.16em;color:#8d8d8d;}
+.oth-title{font-family:'RedHatDisplay';font-size:3.2vw;font-weight:700;line-height:1;
+	color:#000;margin-top:0.4vw;}
+
+.oth-item{display:flex;flex-direction:column;align-items:flex-start;}
+.oth-lef .oth-item{margin:auto 0;}
+.oth-row{display:flex;align-items:center;gap:0.6vw;}
+.oth-idx{font-family:'RedHatDisplay';font-size:0.7vw;font-weight:700;color:#9c9c9c;}
+.oth-cat{font-size:0.66vw;color:#9c9c9c;letter-spacing:0.06em;}
+.oth-h{font-size:1.7vw;font-weight:700;color:#000;line-height:1.25;margin-top:0.46vw;}
+.oth-desc{font-size:0.72vw;color:#5a5a5a;line-height:1.85;margin-top:0.5vw;max-width:21vw;
+	word-break:normal;overflow-wrap:break-word;}
+.oth-lef .oth-desc{max-width:none;}
+
+.oth-award{display:inline-flex;align-items:baseline;gap:0.42vw;margin-top:0.9vw;
+	padding:0.4vw 0.68vw;border:0.07vw solid #0B3D2C;align-self:flex-start;}
+.oth-award b{font-size:0.78vw;font-weight:700;color:#0B3D2C;letter-spacing:0.04em;}
+.oth-award span{font-family:'RedHatDisplay';font-size:0.58vw;color:#0B3D2C;
+	letter-spacing:0.08em;text-transform:uppercase;}
+
+.oth-link{display:inline-flex;align-items:center;gap:0.3vw;margin-top:0.85vw;
+	align-self:flex-start;font-size:0.7vw;color:#000;text-decoration:none;
+	border-bottom:0.06vw solid #000;padding-bottom:0.18vw;transition:0.3s;}
+.oth-link svg{width:0.7vw;height:0.7vw;stroke:#000;fill:none;transition:0.3s;}
+.oth-link:hover{opacity:0.6;}
+.oth-link:hover svg{transform:translate(0.08vw,-0.08vw);}
+
+.oth-shots{flex:1;min-height:0;display:flex;gap:0.42vw;margin-top:0.9vw;}
+.oth-shots figure{flex:1 1 0;min-width:0;background:#F4F4F4;overflow:hidden;margin:0;
+	display:flex;align-items:center;justify-content:center;}
+.oth-shots img{display:block;width:100%;height:100%;object-fit:contain;}
+
+.oth-head,.oth-lef .oth-item,.oth-rig .oth-row,.oth-rig .oth-h,
+.oth-rig .oth-desc,.oth-shots{opacity:0;transform:translateY(24%);transition:0.6s;}
+.sd_start .ani .swiper-slide-active .oth-head{opacity:1;transform:none;transition-delay:0.4s;}
+.sd_start .ani .swiper-slide-active .oth-rig .oth-row{opacity:1;transform:none;transition-delay:0.55s;}
+.sd_start .ani .swiper-slide-active .oth-rig .oth-h{opacity:1;transform:none;transition-delay:0.65s;}
+.sd_start .ani .swiper-slide-active .oth-rig .oth-desc{opacity:1;transform:none;transition-delay:0.75s;}
+.sd_start .ani .swiper-slide-active .oth-shots{opacity:1;transform:none;transition-delay:0.9s;}
+.sd_start .ani .swiper-slide-active .oth-lef .oth-item{opacity:1;transform:none;transition-delay:1s;}
+
+/* 栏目 6：超宽屏按 vh 换算（系数 1.75，与栏目 4 一致） */
+@media all and (min-aspect-ratio:21/10){
+	.line.type160{left:calc(38% - 0.2734vh);top:2.005vh;width:0.5469vh;height:calc(100% - 4.0105vh);}
+	.oth-lef,.oth-rig{padding:3.0625vh 3.5875vh 2.975vh 3.4125vh;}
+	.oth-rig{padding-left:3.7625vh;}
+	.oth-kicker{font-size:1.085vh;}
+	.oth-title{font-size:4.55vh;margin-top:0.7vh;}
+	.oth-row{gap:1.05vh;}
+	.oth-idx{font-size:1.155vh;}
+	.oth-cat{font-size:1.085vh;}
+	.oth-h{font-size:2.625vh;margin-top:0.805vh;}
+	.oth-desc{font-size:1.19vh;margin-top:0.875vh;max-width:36.75vh;}
+	.oth-award{gap:0.735vh;margin-top:1.575vh;padding:0.7vh 1.19vh;border-width:0.1225vh;}
+	.oth-award b{font-size:1.26vh;}
+	.oth-award span{font-size:0.9625vh;}
+	.oth-link{gap:0.525vh;margin-top:1.4875vh;font-size:1.155vh;
+		border-bottom-width:0.105vh;padding-bottom:0.315vh;}
+	.oth-link svg{width:1.155vh;height:1.155vh;}
+	.oth-shots{gap:0.735vh;margin-top:1.575vh;}
+}
+
+/* 栏目 6：竖屏平板（上下堆叠） */
+@media all and (min-width:641px) and (max-aspect-ratio:12/10){
+	.box6 .line.type160{display:none;}
+	.oth{flex-direction:column;}
+	.oth-lef{width:100%;height:auto;padding:3vw 5vw 0;}
+	.oth-lef .oth-item{margin:2.2vw 0 0;}
+	.oth-rig{width:100%;height:auto;flex:1 1 auto;min-height:0;padding:2vw 5vw 3.4vw;}
+	.oth-kicker{font-size:0.9vw;}
+	.oth-title{font-size:3.8vw;margin-top:0.8vw;}
+	.oth-row{gap:1.2vw;}
+	.oth-idx{font-size:1.1vw;}
+	.oth-cat{font-size:1.05vw;}
+	.oth-h{font-size:2.2vw;margin-top:0.8vw;}
+	.oth-desc{font-size:1.5vw;margin-top:0.9vw;max-width:none;}
+	.oth-award{gap:1vw;margin-top:1.1vw;padding:0.6vw 1.1vw;border-width:0.14vw;}
+	.oth-award b{font-size:1.5vw;}
+	.oth-award span{font-size:1.05vw;}
+	.oth-link{gap:0.6vw;margin-top:1.1vw;font-size:1.4vw;border-bottom-width:0.12vw;padding-bottom:0.4vw;}
+	.oth-link svg{width:1.4vw;height:1.4vw;}
+	.oth-shots{gap:1vw;margin-top:1.4vw;}
+}
+
+/* 栏目 6：手机 */
+@media all and (max-width:640px){
+	.box6 .line.type160{display:none;}
+	.oth{flex-direction:column;overflow-y:auto;}
+	.oth-lef{width:100%;height:auto;padding:6vw 6.25vw 0;}
+	.oth-lef .oth-item{margin:5vw 0 0;}
+	.oth-rig{width:100%;height:auto;flex:0 0 auto;padding:6vw 6.25vw 6vw;}
+	.oth-kicker{font-size:2.4vw;}
+	.oth-title{font-size:9vw;margin-top:1.6vw;}
+	.oth-row{gap:2.4vw;}
+	.oth-idx{font-size:2.6vw;}
+	.oth-cat{font-size:2.5vw;}
+	.oth-h{font-size:4.6vw;margin-top:1.6vw;line-height:1.3;}
+	.oth-desc{font-size:2.9vw;line-height:1.6;margin-top:1.8vw;max-width:none;}
+	.oth-award{gap:2vw;margin-top:3.4vw;padding:1.4vw 2.4vw;border-width:0.3vw;}
+	.oth-award b{font-size:2.8vw;}
+	.oth-award span{font-size:2.1vw;}
+	.oth-link{gap:1.2vw;margin-top:3.2vw;font-size:2.8vw;border-bottom-width:0.3vw;padding-bottom:0.8vw;}
+	.oth-link svg{width:2.8vw;height:2.8vw;}
+	.oth-shots{gap:2vw;margin-top:3.4vw;height:52vw;flex:none;}
+}

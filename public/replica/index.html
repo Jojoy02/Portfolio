@@ -32,8 +32,8 @@
     【顶部六个栏目名称】
     HTML 位置：.tab_box > ul 中六个 <li class="tab ..."> 的 <p>。
     当前文字依次为：
-    关于我、人工智能项目管理助手、食刻感知小程序、
-    设计作品合集、学术成果、科研项目。
+    关于我、人工智能项目管理助手、食刻Sense小程序、
+    设计作品合集、学术成果、其他。
 
     【首屏大标题】
     HTML 位置：.flyq_area1 > .in > .tit。
@@ -311,10 +311,10 @@ $(function() {
                     <ul>
                         <li class="tab tab1 on"><span><a href="#tab1"><p>About me</p></a></span></li>
                         <li class="tab tab2"><span><a href="#tab2"><p>AI项目管理助手</p></a></span></li>
-                        <li class="tab tab3"><span><a href="#tab3"><p>食刻感知小程序</p></a></span></li>
+                        <li class="tab tab3"><span><a href="#tab3"><p>食刻Sense小程序</p></a></span></li>
                         <li class="tab tab4"><span><a href="#tab4"><p>设计作品合集</p></a></span></li>
                         <li class="tab tab5"><span><a href="#tab5"><p>学术成果</p></a></span></li>
-                        <li class="tab tab6 wh"><span><a href="#tab6"><p>科研项目</p></a></span></li>
+                        <li class="tab tab6 wh"><span><a href="#tab6"><p>其他</p></a></span></li>
                     </ul>
                 </div>
                 <div class="con_box">
@@ -704,7 +704,7 @@ $(function() {
 												<div class="lef">
 													<div class="bg"></div>
 													<div class="shike-left">
-														<div class="shike-tag">食刻感知小程序</div>
+														<div class="shike-tag">食刻Sense小程序</div>
 														<h2 class="shike-headline">用一张照片，<br>读懂你的每一餐。</h2>
 														<p class="shike-desc">基于 AI 图像识别的饮食记录与营养分析工具，让健康饮食更简单、更可持续。</p>
 														<div class="shike-badges">
@@ -1506,7 +1506,7 @@ $(function() {
                         </li>
                         <!--
                             ====================================================
-                            栏目 6：科研项目 / 新闻与媒体
+                            栏目 6：其他 / 新闻与媒体
                             ====================================================
                             本栏目只有一个 Swiper 画面，仅保留新闻与媒体分类文字。
                         -->
@@ -1522,27 +1522,35 @@ $(function() {
                                             <div class="line type9 fix"></div>
                                             <div class="line type10 fix"></div>
                                             <div class="line type11"></div>
+											<div class="line type160"></div>
 											<!--
-											    新闻与媒体主体
-											    左侧保留“新闻”，右侧保留“媒体”及两个影片分类。
+											    其他作品主体
+											    左侧：01 盲人积木教具（金点设计奖）；右侧：02 西南政法大学录取通知书。
 											-->
-											<div class="n_m">
-												<div class="lef">
-													<div class="news">
-														<div class="tit">新闻</div>
+											<div class="oth">
+												<div class="oth-lef">
+													<div class="oth-head">
+														<div class="oth-kicker">OTHER WORKS</div>
+														<h2 class="oth-title">其他</h2>
+													</div>
+													<div class="oth-item">
+														<div class="oth-row"><span class="oth-idx">01</span><span class="oth-cat">产品设计</span></div>
+														<h3 class="oth-h">盲人积木教具</h3>
+														<p class="oth-desc">面向视障儿童的触觉积木教具，以形状、纹理与磁吸结构帮助建立空间认知与手部协调。</p>
+														<div class="oth-award">
+															<b>金点设计奖</b>
+															<span>Golden Pin Design Award</span>
+														</div>
+														<a class="oth-link" href="https://www.goldenpin.org.tw/goldenpin/zh-TW/winners/1372" target="_blank" rel="noopener">查看获奖页面<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M9 7h8v8"/></svg></a>
 													</div>
 												</div>
-												<div class="rig">
-													<div class="media">
-														<div class="tit">媒体</div>
-														<div class="bot">
-															<div class="vd_tab">
-																<ul>
-																	<li>广告影片</li>
-																	<li>项目影片</li>
-																</ul>
-															</div>
-														</div>
+												<div class="oth-rig">
+													<div class="oth-row"><span class="oth-idx">02</span><span class="oth-cat">视觉设计</span></div>
+													<h3 class="oth-h">西南政法大学录取通知书</h3>
+													<p class="oth-desc">以“厚德重法、博学笃行”校训为线索，深蓝布面与烫金工艺承载入学仪式的分量。</p>
+													<div class="oth-shots">
+														<figure><img src="images/other/admission-1.jpg" alt="西南政法大学录取通知书 封面"></figure>
+														<figure><img src="images/other/admission-2.jpg" alt="西南政法大学录取通知书 内页"></figure>
 													</div>
 												</div>
 											</div>
