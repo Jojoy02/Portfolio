@@ -2937,7 +2937,7 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 .wi-tags{display:flex;flex-wrap:nowrap;justify-content:flex-end;gap:0.3vw;}
 .unit_plan.work-index ul li button .wi-tags i{font-style:normal;font-size:0.62vw;color:#3a3a3a;line-height:1.2;
 	border:1px solid rgba(0,0,0,0.16);border-radius:0.9vw;padding:0.2vw 0.52vw;white-space:nowrap;}
-.unit_plan.work-index ul li button .wi-thumb{width:8.2vw;aspect-ratio:1723/635;overflow:hidden;background:#eee;border-radius:0.1vw;}
+.unit_plan.work-index ul li button .wi-thumb{width:8.2vw;aspect-ratio:1701/613;overflow:hidden;background:#eee;border-radius:0.1vw;}
 .wi-thumb img{display:block;width:100%;height:100%;object-fit:cover;transition:0.6s;}
 .unit_plan.work-index ul li button .wi-arrow{display:block;width:1.4vw;height:1.4vw;color:#000;opacity:0;
 	transform:translateX(-40%);transition:0.35s;}
@@ -2965,12 +2965,12 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 .wd-meta em{font-style:normal;color:#9c9c9c;flex:none;width:2.3vw;}
 .wd-meta span{color:#333;}
 
-.wd-stage{width:100%;aspect-ratio:1723/635;background:#F2F2F2;overflow:hidden;}
+.wd-stage{width:100%;aspect-ratio:1701/613;background:#F2F2F2;overflow:hidden;}
 .wd-main{display:block;width:100%;height:100%;object-fit:cover;}
 .wd-thumbs{display:flex;flex-wrap:wrap;align-items:flex-start;gap:0.42vw;margin-top:0.6vw;}
-.wd-thumbs button{flex:0 0 31.4%;padding:0;border:none;background:#F2F2F2;line-height:0;
+.wd-thumbs button{flex:0 0 30%;padding:0;border:none;background:#F2F2F2;line-height:0;
 	cursor:pointer;overflow:hidden;opacity:0.5;transition:0.3s;outline:0 solid #000;}
-.wd-thumbs button img{display:block;width:100%;height:auto;aspect-ratio:1723/635;object-fit:cover;}
+.wd-thumbs button img{display:block;width:100%;height:auto;aspect-ratio:1701/613;object-fit:cover;}
 .wd-thumbs button:hover{opacity:0.85;}
 .wd-thumbs button.on{opacity:1;outline:0.11vw solid #000;outline-offset:0.06vw;}
 
@@ -3034,10 +3034,10 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.wd-meta li{font-size:1.45vw;gap:1.2vw;}
 	.wd-meta em{width:4vw;font-size:1.45vw;}
 	.wd-meta span{font-size:1.45vw;}
-	.wd-stage{flex:1;min-height:0;aspect-ratio:auto;}
-	.wd-main{object-fit:contain;}
-	.wd-thumbs{gap:0.8vw;margin-top:1.2vw;}
-	.wd-thumbs button{flex:0 0 18.6%;}
+	.wd-stage{flex:none;min-height:0;aspect-ratio:1701/613;}
+	.wd-main{object-fit:cover;}
+	.wd-thumbs{gap:0.8vw;margin-top:1.2vw;width:calc(100% - 10.5vw);}
+	.wd-thumbs button{flex:0 0 15.4%;}
 	.line.type150{display:none;}
 }
 
@@ -3238,7 +3238,7 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	/* 栏目 4 详情页：主图按原比例显示，避免上下出现大片灰边 */
 	.work-detail .lef{padding:3.4vw 6vw 2.4vw;}
 	.work-detail .rig{padding:0 6vw 3.4vw;}
-	.wd-stage{flex:none;aspect-ratio:1723/635;}
+	.wd-stage{flex:none;aspect-ratio:1701/613;}
 	.wd-main{object-fit:cover;}
 	.wd-thumbs{margin-top:2.6vw;}
 	.wd-desc{font-size:2.9vw;line-height:1.62;}
