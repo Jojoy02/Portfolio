@@ -3425,14 +3425,14 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	height:calc(100% - 2.2917vw);transform:scaleY(0);transform-origin:0 0;}
 .ani .swiper-slide-active .line.type160{transform:none;transition-delay:0.9s;}
 
-.oth{display:flex;height:100%;background:#fff;}
+.oth{position:relative;display:flex;height:100%;background:#fff;}
 .oth-lef,.oth-rig{position:relative;z-index:3;display:flex;flex-direction:column;
 	padding:1.75vw 2.05vw 1.7vw 1.95vw;}
 .oth-lef{width:38%;}
 .oth-rig{width:62%;padding-left:2.15vw;}
 
 .oth-item{display:flex;flex-direction:column;align-items:flex-start;}
-.oth-lef .oth-item{margin:auto 0;}
+.oth-lef .oth-item{margin:0;}
 .oth-row{display:flex;align-items:center;gap:0.4167vw;}
 .oth-idx{font-family:'RedHatDisplay';font-size:0.7vw;font-weight:700;color:#9c9c9c;}
 .oth-cat{font-size:0.66vw;color:#9c9c9c;letter-spacing:0.06em;}
@@ -3459,13 +3459,54 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	display:flex;align-items:center;justify-content:center;}
 .oth-shots img{display:block;width:100%;height:100%;object-fit:contain;}
 
-.oth-lef .oth-item,.oth-rig .oth-row,.oth-rig .oth-h,
+/* 左栏作品图：贴住左栏底边，与右栏双图共用同一条底对齐线 */
+.oth-fig{flex:1;min-height:0;margin:1.6667vw 0 0;background:#F4F4F4;overflow:hidden;}
+.oth-fig img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+
+/* ---------- 获奖页预览：点链接后从右侧滑出，覆盖右半屏 ---------- */
+.gpv{position:absolute;inset:0;z-index:20;display:flex;justify-content:flex-end;
+	opacity:0;pointer-events:none;transition:opacity 0.45s;}
+.gpv.on{opacity:1;pointer-events:auto;}
+.gpv-bd{position:absolute;inset:0;background:rgba(255,255,255,0.32);cursor:pointer;}
+.gpv-panel{position:relative;display:flex;flex-direction:column;width:62%;height:100%;
+	background:#fff;border-left:1px solid rgba(0,0,0,0.14);
+	box-shadow:-1.2vw 0 2.4vw rgba(0,0,0,0.06);
+	transform:translateX(9%);transition:transform 0.55s cubic-bezier(0.22,1,0.36,1);}
+.gpv.on .gpv-panel{transform:none;}
+.gpv-top{flex:none;display:flex;align-items:center;gap:0.4167vw;height:2.4vw;
+	padding:0 1.25vw;border-bottom:1px solid rgba(0,0,0,0.08);}
+.gpv-dots{display:inline-flex;gap:0.26vw;flex:none;}
+.gpv-dots i{width:0.42vw;height:0.42vw;border-radius:50%;background:#d8d8d8;}
+.gpv-url{flex:1;min-width:0;font-family:'RedHatDisplay';font-size:0.62vw;color:#8a8a8a;
+	white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:0.4167vw;}
+.gpv-x{flex:none;display:inline-flex;align-items:center;justify-content:center;
+	width:1.35vw;height:1.35vw;padding:0;border:0;background:transparent;cursor:pointer;
+	transition:0.3s;}
+.gpv-x svg{width:0.7vw;height:0.7vw;stroke:#000;fill:none;}
+.gpv-x:hover{opacity:0.5;}
+.gpv-shot{flex:1;min-height:0;display:block;background:#fff;overflow:hidden;cursor:pointer;}
+.gpv-shot img{display:block;width:100%;height:100%;object-fit:contain;object-position:top center;}
+.gpv-foot{flex:none;display:flex;align-items:center;justify-content:space-between;
+	gap:1.25vw;padding:1.0417vw 1.25vw;border-top:1px solid rgba(0,0,0,0.08);}
+.gpv-meta{min-width:0;}
+.gpv-meta b{display:block;font-size:0.72vw;font-weight:700;color:#000;letter-spacing:0.02em;}
+.gpv-meta span{display:block;font-size:0.64vw;color:#8a8a8a;margin-top:0.2083vw;
+	white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.gpv-go{flex:none;display:inline-flex;align-items:center;gap:0.4167vw;
+	font-size:0.68vw;color:#000;text-decoration:none;padding-bottom:0.18vw;
+	border-bottom:0.06vw solid #000;transition:0.3s;}
+.gpv-go svg{width:0.68vw;height:0.68vw;stroke:#000;fill:none;transition:0.3s;}
+.gpv-go:hover{opacity:0.6;}
+.gpv-go:hover svg{transform:translate(0.08vw,-0.08vw);}
+
+.oth-lef .oth-item,.oth-fig,.oth-rig .oth-row,.oth-rig .oth-h,
 .oth-rig .oth-desc,.oth-shots{opacity:0;transform:translateY(24%);transition:0.6s;}
 .sd_start .ani .swiper-slide-active .oth-rig .oth-row{opacity:1;transform:none;transition-delay:0.55s;}
 .sd_start .ani .swiper-slide-active .oth-rig .oth-h{opacity:1;transform:none;transition-delay:0.65s;}
 .sd_start .ani .swiper-slide-active .oth-rig .oth-desc{opacity:1;transform:none;transition-delay:0.75s;}
 .sd_start .ani .swiper-slide-active .oth-shots{opacity:1;transform:none;transition-delay:0.9s;}
-.sd_start .ani .swiper-slide-active .oth-lef .oth-item{opacity:1;transform:none;transition-delay:1s;}
+.sd_start .ani .swiper-slide-active .oth-lef .oth-item{opacity:1;transform:none;transition-delay:0.95s;}
+.sd_start .ani .swiper-slide-active .oth-fig{opacity:1;transform:none;transition-delay:1.1s;}
 
 /* 栏目 6：超宽屏按 vh 换算（系数 1.75，与栏目 4 一致） */
 @media all and (min-aspect-ratio:21/10){
@@ -3484,6 +3525,18 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 		border-bottom-width:0.105vh;padding-bottom:0.315vh;}
 	.oth-link svg{width:1.155vh;height:1.155vh;}
 	.oth-shots{gap:0.735vh;margin-top:1.575vh;}
+	.oth-fig{margin-top:2.9167vh;}
+	.gpv-top{gap:0.729vh;height:4.2vh;padding:0 2.1875vh;}
+	.gpv-dots{gap:0.455vh;}
+	.gpv-dots i{width:0.735vh;height:0.735vh;}
+	.gpv-url{font-size:1.085vh;margin-left:0.729vh;}
+	.gpv-x{width:2.3625vh;height:2.3625vh;}
+	.gpv-x svg{width:1.225vh;height:1.225vh;}
+	.gpv-foot{gap:2.1875vh;padding:1.823vh 2.1875vh;}
+	.gpv-meta b{font-size:1.26vh;}
+	.gpv-meta span{font-size:1.12vh;margin-top:0.3646vh;}
+	.gpv-go{gap:0.729vh;font-size:1.19vh;padding-bottom:0.315vh;border-bottom-width:0.105vh;}
+	.gpv-go svg{width:1.19vh;height:1.19vh;}
 }
 
 /* 栏目 6：竖屏平板（上下堆叠） */
@@ -3504,6 +3557,25 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.oth-link{gap:0.6vw;margin-top:1.1vw;font-size:1.4vw;border-bottom-width:0.12vw;padding-bottom:0.4vw;}
 	.oth-link svg{width:1.4vw;height:1.4vw;}
 	.oth-shots{gap:1vw;margin-top:1.4vw;}
+	.oth-fig{flex:none;height:min(40vw, 26vh);margin-top:2vw;}
+	.oth-fig img{object-fit:cover;}
+	/* 竖屏下整页截图按宽度铺满后高度不足，面板改为按内容撑高，避免底部留大片空白 */
+	.gpv{align-items:flex-start;}
+	.gpv-bd{background:rgba(255,255,255,0.62);}
+	.gpv-panel{width:100%;height:auto;max-height:100%;border-left:0;}
+	.gpv-shot{flex:0 0 auto;}
+	.gpv-shot img{height:auto;}
+	.gpv-top{gap:1.2vw;height:6vw;padding:0 5vw;}
+	.gpv-dots{gap:0.8vw;}
+	.gpv-dots i{width:1.2vw;height:1.2vw;}
+	.gpv-url{font-size:1.8vw;margin-left:1.2vw;}
+	.gpv-x{width:6vw;height:6vw;}
+	.gpv-x svg{width:2.6vw;height:2.6vw;}
+	.gpv-foot{gap:3vw;padding:3vw 5vw;}
+	.gpv-meta b{font-size:2vw;}
+	.gpv-meta span{font-size:1.7vw;margin-top:0.6vw;}
+	.gpv-go{gap:1vw;font-size:1.8vw;padding-bottom:0.6vw;border-bottom-width:0.2vw;}
+	.gpv-go svg{width:1.8vw;height:1.8vw;}
 }
 
 /* 栏目 6：手机 */
@@ -3524,6 +3596,25 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.oth-link{gap:1.2vw;margin-top:3.2vw;font-size:2.8vw;border-bottom-width:0.3vw;padding-bottom:0.8vw;}
 	.oth-link svg{width:2.8vw;height:2.8vw;}
 	.oth-shots{gap:2vw;margin-top:3.4vw;height:52vw;flex:none;}
+	.oth-fig{flex:none;height:50vw;margin-top:4vw;}
+	.oth-fig img{object-fit:cover;}
+	/* 竖屏下整页截图按宽度铺满后高度不足，面板改为按内容撑高，避免底部留大片空白 */
+	.gpv{align-items:flex-start;}
+	.gpv-bd{background:rgba(255,255,255,0.62);}
+	.gpv-panel{width:100%;height:auto;max-height:100%;border-left:0;}
+	.gpv-shot{flex:0 0 auto;}
+	.gpv-shot img{height:auto;}
+	.gpv-top{gap:2vw;height:11vw;padding:0 6.25vw;}
+	.gpv-dots{gap:1.4vw;}
+	.gpv-dots i{width:2vw;height:2vw;}
+	.gpv-url{font-size:2.8vw;margin-left:2vw;}
+	.gpv-x{width:9vw;height:9vw;}
+	.gpv-x svg{width:4.4vw;height:4.4vw;}
+	.gpv-foot{gap:4vw;padding:4.4vw 6.25vw;}
+	.gpv-meta b{font-size:3.2vw;}
+	.gpv-meta span{font-size:2.7vw;margin-top:1vw;}
+	.gpv-go{gap:1.2vw;font-size:2.8vw;padding-bottom:0.8vw;border-bottom-width:0.3vw;}
+	.gpv-go svg{width:2.8vw;height:2.8vw;}
 }
 
 /* 矮屏手机（如 375×667）：样机在这个尺寸下已看不清，隐藏后把空间让给功能列表 */
@@ -3539,11 +3630,14 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.oth-lef .oth-item{margin-top:3.6vw;}
 	.oth-rig{padding:4.6vw 6.25vw 4.6vw;}
 	.oth-shots{height:34vw;margin-top:2.6vw;}
+	.oth-fig{height:38vw;margin-top:3vw;}
 }
 
 /* 近正方形视口（如 1024×1000）：纵向空间最紧，隐藏二维码行保住功能列表 */
 @media all and (min-width:641px) and (min-aspect-ratio:1/1) and (max-aspect-ratio:12/10){
 	.slide-shike-hero .location.layout-v2 .f-row-qr{display:none;}
+	/* 近方形视口纵向最紧：作品图压成横条，把高度让给右栏双图 */
+	.oth-fig{height:19vh;}
 	.location.layout-v2 .shike-desc{margin-top:1.4vw;}
 	.location.layout-v2 .shike-badges{margin-top:1.6vw;}
 }

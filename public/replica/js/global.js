@@ -648,3 +648,30 @@ $(document).ready(function () {
     sd5.update()
   }
 })
+
+// 栏目 6：点「查看获奖页面」不跳转，改为在右侧就地展开获奖页预览
+$(function () {
+  var $gpv = $(".gpv")
+  if (!$gpv.length) return
+  var $link = $(".oth-link[data-gpv]")
+
+  function openGpv() {
+    $gpv.addClass("on").attr("aria-hidden", "false")
+  }
+  function closeGpv() {
+    $gpv.removeClass("on").attr("aria-hidden", "true")
+  }
+
+  $link.on("click", function (e) {
+    e.preventDefault()
+    openGpv()
+  })
+  $gpv.on("click", ".gpv-bd, .gpv-x", function (e) {
+    e.preventDefault()
+    e.stopPropagation()
+    closeGpv()
+  })
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape" || e.keyCode === 27) closeGpv()
+  })
+})
