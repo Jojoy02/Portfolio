@@ -2577,7 +2577,8 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	display: flex; flex-direction: column;
 	padding: 1.75vw 2.2vw 1.7vw 1.95vw;}
 
-.ps-tag{align-self: flex-start; display: inline-flex; align-items: center; gap: 0.42vw;
+.ps-top{display: flex; align-items: center; gap: 1.1vw;}
+.ps-tag{flex: none; display: inline-flex; align-items: center; gap: 0.42vw;
 	background: #2E6BE6; color: #fff; font-size: 0.6771vw; font-weight: 600;
 	padding: 0.32vw 0.78vw; border-radius: 0.16vw; letter-spacing: 0.06em;
 	opacity: 0; transform: translateY(30%); transition: 0.6s;}
@@ -2589,6 +2590,16 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 .ps-chips{display: flex; gap: 0.5vw; margin-top: 0.75vw; opacity: 0; transform: translateY(30%); transition: 0.6s;}
 .ps-chips span{font-size: 0.64vw; font-weight: 500; color: #1B4FC4; background: rgba(255,255,255,0.94);
 	border: 1px solid rgba(46,107,230,0.22); border-radius: 0.32vw; padding: 0.26vw 0.56vw; white-space: nowrap;}
+/* GitHub 仓库入口：与标签同排，不额外占用纵向空间，hover 时下划线加深 */
+.ps-repo{display: inline-flex; align-items: center; gap: 0.34vw; min-width: 0;
+	font-size: 0.66vw; font-weight: 500; color: #1B4FC4; text-decoration: none; white-space: nowrap;
+	padding-bottom: 0.14vw; border-bottom: 1px solid rgba(27,79,196,0.32);
+	opacity: 0; transform: translateY(30%); transition: 0.6s, border-color 0.3s;}
+.ps-repo-mini{display: none;}
+.ps-repo:hover{border-bottom-color: #1B4FC4;}
+.ps-repo svg{width: 0.7vw; height: 0.7vw; flex: none;}
+.ps-repo .ps-repo-ico{fill: #1B4FC4; stroke: none;}
+.ps-repo .ps-repo-arr{fill: none; stroke: #1B4FC4; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;}
 
 /* ---------- 画面 1 左区：飞书对话界面 ---------- */
 .ps-chat{display: flex; flex: 1; min-height: 0; margin-top: 1vw;
@@ -2638,7 +2649,8 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	width: 0.2vw; height: 0.2vw; border-radius: 50%; background: #8FAFCB;}
 .ps-input{flex: none; height: 2.2vw; margin-top: 0.6vw; display: flex; align-items: center; gap: 0.5vw;
 	background: #fff; border: 1px solid #E2ECFB; border-radius: 0.32vw; padding: 0 0.62vw;}
-.ps-input span{font-size: 0.68vw; color: #9DAEBF; line-height: 1.2;}
+.ps-input span{font-size: 0.68vw; color: #9DAEBF; line-height: 1.2;
+	min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .ps-input i{margin-left: auto; flex: none; width: 1.3vw; height: 1.3vw; border-radius: 0.2vw;
 	background: #2E6BE6; color: #fff; font-style: normal; font-size: 0.5vw;
 	display: flex; align-items: center; justify-content: center;}
@@ -2719,6 +2731,7 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 .sd_start .ani .swiper-slide-active .ps-hero .ps-title{opacity: 1; transform: none; transition-delay: 0.6s;}
 .sd_start .ani .swiper-slide-active .ps-hero .ps-desc{opacity: 1; transform: none; transition-delay: 0.8s;}
 .sd_start .ani .swiper-slide-active .ps-hero .ps-chips{opacity: 1; transform: none; transition-delay: 1s;}
+.sd_start .ani .swiper-slide-active .ps-hero .ps-repo{opacity: 1; transform: none; transition-delay: 1.15s;}
 .sd_start .ani .swiper-slide-active .ps-hero .ps-chat{opacity: 1; transform: none; transition-delay: 1.2s;}
 .sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(1) em,
 .sd_start .ani .swiper-slide-active .ps-hero .ps-list li:nth-child(1) div{opacity: 1; transform: none; transition-delay: 1.4s;}
@@ -2752,6 +2765,9 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.ps-desc{font-size: 1.3301vh; margin-top: 0.9625vh; max-width: 57.7528vh;}
 	.ps-chips{margin-top: 1.3126vh; gap: 0.875vh;}
 	.ps-chips span{font-size: 1.1201vh; padding: 0.455vh 0.98vh; border-radius: 0.56vh;}
+	.ps-top{gap: 1.925vh;}
+	.ps-repo{font-size: 1.155vh; gap: 0.595vh; padding-bottom: 0.245vh;}
+	.ps-repo svg{width: 1.225vh; height: 1.225vh;}
 	.ps-chat{margin-top: 1.7501vh; border-radius: 0.91vh; box-shadow: 0 0.9625vh 2.8001vh rgba(15,39,64,0.12);}
 	.ps-side{width: 6.1253vh; padding: 1.2251vh 0.525vh; gap: 0.49vh;}
 	.ps-side-item{font-size: 1.0501vh; padding: 0.735vh 0; border-radius: 0.42vh;}
@@ -2842,6 +2858,9 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.ps-title{font-size: 3.2vw; margin-top: 0.9vw;}
 	.ps-desc{display: none;}
 	.ps-chips{display: none;}
+	.ps-top{gap: 1.6vw;}
+	.ps-repo{font-size: 1.3vw; gap: 0.7vw; padding-bottom: 0.3vw;}
+	.ps-repo svg{width: 1.4vw; height: 1.4vw;}
 	.ps-chat{margin-top: 1.2vw; border-radius: 0.9vw; box-shadow: 0 0.9vw 2.2vw rgba(15,39,64,0.12);}
 	.ps-side{width: 5.8vw; padding: 1vw 0.45vw; gap: 0.45vw;}
 	.ps-side-item{font-size: 0.95vw; padding: 0.68vw 0; border-radius: 0.36vw;}
@@ -3093,6 +3112,11 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.ps-tag{font-size:2.7vw;padding:1vw 2.2vw;border-radius:0.8vw;gap:1.2vw;}
 	.ps-tag::before{width:1.6vw;height:1.6vw;}
 	.ps-title{font-size:5.6vw;margin-top:2vw;line-height:1.26;}
+	.ps-top{justify-content:space-between;gap:2vw;}
+	.ps-repo{font-size:2.6vw;gap:0.8vw;padding-bottom:0.4vw;border-bottom-width:1px;}
+	.ps-repo-txt{display:none;}
+	.ps-repo-mini{display:inline;}
+	.ps-repo svg{width:2.9vw;height:2.9vw;}
 	.ps-chat{margin-top:2.4vw;border-radius:1.4vw;}
 	.ps-side{width:11vw;padding:1.6vw 0.8vw;gap:0.9vw;}
 	.ps-side-item{font-size:2.2vw;padding:1.2vw 0;border-radius:0.8vw;}
@@ -3393,11 +3417,6 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 .oth-lef{width:38%;}
 .oth-rig{width:62%;padding-left:2.15vw;}
 
-.oth-kicker{font-family:'RedHatDisplay';font-size:0.62vw;font-weight:700;
-	letter-spacing:0.16em;color:#8d8d8d;}
-.oth-title{font-family:'RedHatDisplay';font-size:3.2vw;font-weight:700;line-height:1;
-	color:#000;margin-top:0.4vw;}
-
 .oth-item{display:flex;flex-direction:column;align-items:flex-start;}
 .oth-lef .oth-item{margin:auto 0;}
 .oth-row{display:flex;align-items:center;gap:0.6vw;}
@@ -3426,9 +3445,8 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	display:flex;align-items:center;justify-content:center;}
 .oth-shots img{display:block;width:100%;height:100%;object-fit:contain;}
 
-.oth-head,.oth-lef .oth-item,.oth-rig .oth-row,.oth-rig .oth-h,
+.oth-lef .oth-item,.oth-rig .oth-row,.oth-rig .oth-h,
 .oth-rig .oth-desc,.oth-shots{opacity:0;transform:translateY(24%);transition:0.6s;}
-.sd_start .ani .swiper-slide-active .oth-head{opacity:1;transform:none;transition-delay:0.4s;}
 .sd_start .ani .swiper-slide-active .oth-rig .oth-row{opacity:1;transform:none;transition-delay:0.55s;}
 .sd_start .ani .swiper-slide-active .oth-rig .oth-h{opacity:1;transform:none;transition-delay:0.65s;}
 .sd_start .ani .swiper-slide-active .oth-rig .oth-desc{opacity:1;transform:none;transition-delay:0.75s;}
@@ -3440,8 +3458,6 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.line.type160{left:calc(38% - 0.2734vh);top:2.005vh;width:0.5469vh;height:calc(100% - 4.0105vh);}
 	.oth-lef,.oth-rig{padding:3.0625vh 3.5875vh 2.975vh 3.4125vh;}
 	.oth-rig{padding-left:3.7625vh;}
-	.oth-kicker{font-size:1.085vh;}
-	.oth-title{font-size:4.55vh;margin-top:0.7vh;}
 	.oth-row{gap:1.05vh;}
 	.oth-idx{font-size:1.155vh;}
 	.oth-cat{font-size:1.085vh;}
@@ -3463,8 +3479,6 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.oth-lef{width:100%;height:auto;padding:3vw 5vw 0;}
 	.oth-lef .oth-item{margin:2.2vw 0 0;}
 	.oth-rig{width:100%;height:auto;flex:1 1 auto;min-height:0;padding:2vw 5vw 3.4vw;}
-	.oth-kicker{font-size:0.9vw;}
-	.oth-title{font-size:3.8vw;margin-top:0.8vw;}
 	.oth-row{gap:1.2vw;}
 	.oth-idx{font-size:1.1vw;}
 	.oth-cat{font-size:1.05vw;}
@@ -3485,8 +3499,6 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.oth-lef{width:100%;height:auto;padding:6vw 6.25vw 0;}
 	.oth-lef .oth-item{margin:5vw 0 0;}
 	.oth-rig{width:100%;height:auto;flex:0 0 auto;padding:6vw 6.25vw 6vw;}
-	.oth-kicker{font-size:2.4vw;}
-	.oth-title{font-size:9vw;margin-top:1.6vw;}
 	.oth-row{gap:2.4vw;}
 	.oth-idx{font-size:2.6vw;}
 	.oth-cat{font-size:2.5vw;}
@@ -3512,7 +3524,6 @@ footer .contact .label{color:#000;font-size:1.0417vw;font-weight:400;margin-righ
 	.oth-lef{padding-top:5vw;}
 	.oth-lef .oth-item{margin-top:3.6vw;}
 	.oth-rig{padding:4.6vw 6.25vw 4.6vw;}
-	.oth-title{font-size:8vw;margin-top:1.2vw;}
 	.oth-shots{height:34vw;margin-top:2.6vw;}
 }
 
